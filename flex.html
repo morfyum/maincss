@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="maincss.css">
+</head>
+<body>
+		<header>
+            <div class="topnav" id="myTopnav">
+                <a href="#mainpage" class="active">FLEX.html</a>
+                <a href="#">Bolt</a>
+                <a href="#blog">Blog</a>
+                <a href="#it-services">IT Services</a>
+                <div class="dropdown">
+                    <div class="dropbtn">Egyéb
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <a href="{% url 'about' %}">About</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+                <a href="#login" class="rightnav">Login</a>
+                <a href="#regist" class="rightnav">Regist</a>
+            </div>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+
+        </header>
+
+
+<div class="basebox col margin">
+	<div class="basebox adbox">GUILTY<br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+
+	<div class="basebox" id="unique-slideshow" style="background-color:orange;">
+		<img class="image-slide" src="Morfyum_fhd.jpg">
+		<img class="image-slide" src="202004-test-14.jpg">
+		<img class="image-slide" src="Untitled-03.jpg">
+	</div>
+	<div class="basebox adbox">FREEDOM <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+
+	<script  type="text/javascript" src="js/models.js"></script>
+	<script>
+		var slideIndex = 0;
+		carousel();
+	</script>
+
+</div>
+
+
+
+<div class="basebox center col">
+<h3>Soft</h3>
+</div>
+
+<!--div class="basebox" id="unique-banner">
+</div-->
+
+
+<footer class="center">
+
+</footer>
+
+
+</body>
+</html>

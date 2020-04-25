@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="maincss.css">
+</head>
+<body>
+<header>
+            <div class="topnav" id="myTopnav">
+                <a href="#mainpage" class="active">INDEX.html</a>
+                <a href="#">Bolt</a>
+                <a href="#blog">Blog</a>
+                <a href="#it-services">IT Services</a>
+                <div class="dropdown">
+                    <div class="dropbtn">Egyéb
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <a href="{% url 'about' %}">About</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+                <a href="#login" class="rightnav">Login</a>
+                <a href="#regist" class="rightnav">Regist</a>
+            </div>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+
+        </header>
+
+<div class="basebox center" >
+	<div class="basebox" style="width: 500px; height: 600px; padding: 0px;">
+		<img src="Untitled-03.jpg">
+	</div>
+</div>
+
+<div class="basebox row center margin">
+<h1>Árvíztűrő tükörfúrógép
+</h1>
+</div>
+
+<div class="basebox row center margin">
+
+	<div class="alert">
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<strong>Warning buttons</strong><br>
+		Alert windows in 4 different color type from extras.css. <br> This is the default.
+	</div>
+	<div class="alert red">
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		THIS IS RED ALERT
+	</div>
+	<div class="alert orange">
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		THIS IS ORANGE ALERT
+	</div>
+	<div class="alert green">
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		AND THIS IS A SUCCES GREEN
+	</div>
+
+
+</div>
+
+<div class="basebox center margin padding">
+<h2>&#60;3 Preconfigured form, and button elements, to be an Amazing login session &#60;3</h2>
+</div>
+
+<div class="basebox center margin">
+
+	<form>
+		<fieldset>
+			<legend>Input text</legend>
+				<div class="basebox center">INPUT TEXT: <input type="text"></div>
+			<div class="basebox center">INPUT TEXT: <input type="text"></div>
+			<div class="basebox center">Checkbox <input type="checkbox"></div>
+			<div class="basebox center">Radio 1<input type="radio" name="asd"></div>
+			<div class="basebox center">Radio 2<input type="radio" name="asd"></div>
+		</fieldset>
+	<hr>
+	<div class="button">Button</div>
+	</form>
+
+
+	<form>
+		<fieldset>
+			<legend>Input text</legend>
+				<div class="basebox center">INPUT TEXT: <input type="text"></div>
+			<div class="basebox center">INPUT TEXT: <input type="text"></div>
+			<div class="basebox center">Checkbox <input type="checkbox"></div>
+			<div class="basebox center">Radio 1<input type="radio" name="asd"></div>
+			<div class="basebox center">Radio 2<input type="radio" name="asd"></div>
+		</fieldset>
+	<hr>
+	<div class="button">Button</div>
+	</form>
+	
+</div>
+
+<div class="basebox margin">
+	<div class="basebox col margin center padding">
+		<h2>Probably responsive col class form 1-6 column</h2>
+	</div>
+
+	<div class="testbox col-1 center">
+   		COL-1
+	</div>
+
+	<div class="testbox col-2 center">
+	   COL-2
+	</div>
+	<div class="testbox col-2 center">
+	   COL-2
+	</div>
+
+	<div class="testbox col-3 center">
+	   COL-3
+	</div>
+	<div class="testbox col-3 center">
+	   COL-3
+	</div>
+	<div class="testbox col-3 center">
+	   COL-3
+	</div>
+
+	<div class="testbox col-4 center">
+	   COL-4
+	</div>
+	<div class="testbox col-4 center">
+	   COL-4
+	</div>
+	<div class="testbox col-4 center">
+	   COL-4
+	</div>
+	<div class="testbox col-4 center">
+	   COL-4
+	</div>
+
+	<div class="testbox col-5 center">
+	   COL-5
+	</div>
+	<div class="testbox col-5 center">
+	   COL-5
+	</div>
+	<div class="testbox col-5 center">
+	   COL-5
+	</div>
+	<div class="testbox col-5 center">
+	   COL-5
+	</div>
+	<div class="testbox col-5 center">
+	   COL-5
+	</div>
+
+	<div class="testbox col-6 center">
+	   COL-6
+	</div>
+	<div class="testbox col-6 center">
+	   COL-6
+	</div>
+	<div class="testbox col-6 center">
+	   COL-6
+	</div>
+	<div class="testbox col-6 center">
+	   COL-6
+	</div>
+	<div class="testbox col-6 center">
+	   COL-6
+	</div>
+	<div class="testbox col-6 center">
+	   COL-6
+	</div>
+
+<div class="basebox col margin center">col-2 + (3x col-6)</div>
+
+	<div class="testbox col-2 center">
+   		COL-2
+	</div>
+	<div class="testbox col-6 center">
+	   COL-6
+	</div>
+	<div class="testbox col-6 center">
+	   COL-6
+	</div>
+	<div class="testbox col-6 center">
+	   COL-6
+	</div>
+
+	<div class="basebox col margin center">2x col-4 + col-2</div>
+	<div class="testbox col-4 center">
+   		COL-4
+	</div>
+	<div class="testbox col-4 center">
+   		COL-4
+	</div>
+	<div class="testbox col-2 center">
+   		COL-2
+	</div>
+
+	<div class="basebox col margin center">col-4 + col-2 + col-4</div>
+	<div class="testbox col-4 center">
+   		COL-4
+	</div>
+	<div class="testbox col-2 center">
+   		COL-2
+	</div>
+	<div class="testbox col-4 center">
+   		COL-4
+	</div>
+
+</div>
+
+
+<div class="basebox margin center" style="">
+	<div class="basebox col margin center"><h2>Cards, from "extras.css", because fancy</h2></div>
+	<div class=" center card" style="">basebox<hr><a href="Morfyum_fhd.jpg"><img src="Morfyum_fhd.jpg"></a></div>
+	<div class=" center card" style="">basebox<hr><a href="Untitled-03.jpg"><img src="Untitled-03.jpg"></a></div>
+	<div class=" center card" style="">basebox<hr><a href="202004-test-14.jpg"><img src="202004-test-14.jpg"></a></div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+	<div class=" center card" style="">basebox</div>
+</div>
+
+<div class="basebox margin center padding">
+   <h2>Expandable <strong>&#160;&#60;footer&#62;&#160;</strong> with col-6 divs</h2>
+</div>
+
+<footer class="row center">
+
+	<div class="basebox col-6">
+		<div class="basebox col center">Developer</div><hr>
+		<div class="basebox col center padding">Józsa Márton</div>
+		<div class="basebox col center padding">2020</div>
+		<div class="basebox col center padding">All right reserved</div>
+	</div>
+
+	<div class="basebox col-6">
+		<div class="basebox col center">Technology</div><hr>
+		<div class="basebox col center padding">HTML-5</div>
+		<div class="basebox col center padding">CSS 3</div>
+		<div class="basebox col center padding">CSS Flexbox</div>
+	</div>
+
+	<div class="basebox col-6">
+		<div class="basebox col center">Useful tools</div><hr>
+		<div class="basebox col center padding"><a href="https://www.whatsmyip.org/html-characters/" target="blank_10">Special Characters</a></div>
+		<div class="basebox col center padding"><a href="https://www.pexels.com/" target="blank_10">Free Pictures from Pexels</a></div>
+		<div class="basebox col center padding"></div>
+	</div>
+
+</footer>
+
+
+</body>
+</html>

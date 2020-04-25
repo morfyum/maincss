@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+/* For Small screen devices. This is the most smaller screen in phone family */
+
+	/* MAINCSS.CSS */
+	.col-1{
+	  width: 100%;
+  	  min-width: auto !important;
+	}
+	.col-2{
+	  width: 100% !important;
+  	  min-width: auto !important;
+	  background-color: red ;
+	}
+	.col-3{
+	  width: 100% !important;
+	  min-width: auto !important;
+	}
+	.col-4{
+	  width: 100% !important;
+	  min-width: auto !important;	
+	}
+	.col-5{
+	  width: 100% !important;
+	  min-width: auto !important;	
+	}
+	.col-6{
+	  width: 44% !important;
+	  min-width: auto !important;	
+	}
+
+	#unique-slideshow{
+	  width: 100% !important;
+	  height: 350px !important;
+	  margin: 0rem !important;
+ 	  background-color: orange;
+	}
+	/* MAINCSS.CSS END */
+
+	 /* EXTRAS.CSS */
+	.adbox{
+	  display: none !important;
+	}
+
+	.card{
+	  width: 190px !important;
+	  height: 240px !important;
+	  margin: 10px 10px 10px 10px !important;
+	}
+	/* EXTRAS.CSS END */
+}

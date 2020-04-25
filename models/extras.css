@@ -1,0 +1,134 @@
+.image-slide{
+  display: none;
+
+  /*object-fit: cover;
+  object-position: top center;*/
+
+  width: 100%;
+  max-height: 100%;
+}
+
+#unique-slideshow{
+  width: 1200px;
+  height: 460px;
+
+  margin: 0 0.5rem 0 0.5rem;
+  padding: 0;
+
+  background-repeat: no-repeat;
+  background-position: top, center;
+  background-size: cover;
+
+  /*background-color: orange;*/
+}
+
+.adbox{
+  max-width: 300px;
+  width: 200px !important;
+  min-width: 200px;
+  max-height: 460px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 0.5rem;
+  text-align: justify;
+  font-size: 1vw;
+  flex-shrink: 4;
+
+
+  /*background-color: orange;*/
+}
+
+/* CARD */
+
+.card{
+  width: 200px;
+  height: 250px;
+
+  margin: 30px 25px 30px 25px;
+  padding: 0.5rem;
+
+  border-radius: 3px;
+  box-shadow: 0px 0px 7px;
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.card:hover{
+  width: 220px;
+  height: 270px;
+
+  transition: 0.25s;
+
+  margin: 10px 15px 10px 15px;
+
+  /*transform:rotate(4deg) translate(5%);*/
+  background-color: rgba(255, 255, 255, 1);
+
+
+ background: linear-gradient(45deg,  rgba(255, 255, 255), rgba(140, 140, 140, 0.5));
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition:all .5s ease;
+}
+
+/* BACKGROUND GRADIENT INFINITY EFFECT 
+   EATING CUP, DO NOT USE IT XD 
+*/
+
+#background-gradient{
+	background: linear-gradient(-45deg, #ffff, #333333, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/*  CSS ALERT 
+CODE EXAMPLE:
+
+<div class="alert">
+	<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+	<strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+
+*/
+.red{
+  background-color: rgba(255, 0, 0, 1) !important;
+}
+.orange{
+  background-color: var(--font-color-for-all) !important;
+}
+.green{
+  background-color: rgba(40, 200, 40, 1) !important;
+}
+
+.alert {
+  width: 100%;
+  margin: 0.25rem;
+  padding: 20px;
+  background-color: #333333;
+  color: #fff;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.75rem;
+}
