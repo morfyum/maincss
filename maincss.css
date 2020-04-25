@@ -157,7 +157,7 @@ body{
 .col-6{ /* 1/6 = 20% */
   display: flex;
   width: 12%;
-  min-width: 155px;
+  /*min-width: 155px;*/
   flex-grow: 1;
   flex-shrink: 6;
 
