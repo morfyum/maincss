@@ -24,8 +24,10 @@
 	  min-width: auto !important;	
 	}
 	.col-6{
-	  width: 44% !important;
-	  min-width: auto !important;	
+	  width: 100%; !important;
+	  min-width: auto !important;
+
+	  font-size: ;
 	}
 
 	#unique-slideshow{
@@ -42,8 +44,8 @@
 	}
 
 	.card{
-	  width: 190px !important;
-	  height: 240px !important;
+	  width: 100% !important;
+	  height: auto !important;
 	  margin: 10px 10px 10px 10px !important;
 	}
 	/* EXTRAS.CSS END */

@@ -57,6 +57,8 @@ body{
   display: flex;
   min-height: 20px;
 
+
+  align-items: baseline;
   /*flex-basis: auto;*/
   /*flex-direction: row;*/
 
@@ -66,7 +68,7 @@ body{
   /*margin: 0.5rem; /* később kivehető*/
   /*padding: 0.5rem; */
 
-  background-color: rgba(240, 240, 240, 1);
+  /*background-color: rgba(240, 240, 240, 1);*/
 }
 
 .padding{
@@ -155,12 +157,10 @@ body{
   padding: 1rem;
 }
 .col-6{ /* 1/6 = 20% */
-  display: flex;
   /*width: 12%;*/
-  /*min-width: 155px;*/
+  min-width: 155px;
   flex-grow: 1;
   flex-shrink: 6;
-
   margin: 1px;
   padding: 1rem;
 }
@@ -189,9 +189,9 @@ footer{
   min-height: 150px;
 
   display: flex;
-  margin-bottom: 0px;
+  /*margin-bottom: 0px;*/
 
-  align-items: flex-start; 
+  /*align-items: flex-start; */
 
   padding: 1rem;
   /*color: var(--font-color-for-dark);*/
