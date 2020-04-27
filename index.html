@@ -3,7 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="models/header.css">
 	<link rel="stylesheet" type="text/css" href="maincss.css">
+	<link rel="stylesheet" type="text/css" href="models/extras.css">
+	<link rel="stylesheet" type="text/css" href="models/768p.css">
+	<link rel="stylesheet" type="text/css" href="models/1280p.css">
+	<link rel="stylesheet" type="text/css" href="models/2160p.css">
+
 </head>
 <body>
 <header>
@@ -44,14 +51,53 @@
 
 <div class="basebox center" >
 	<div class="basebox">
-		<img src="Untitled-03.jpg">
+		<img src="02.jpg">
 	</div>
 </div>
 
 <div class="basebox row center margin">
-<h1>Árvíztűrő tükörfúrógép
-</h1>
+	<h1>Árvíztűrő tükörfúrógép</h1>
+	<h1>Öt szép szűzlány őrült írót nyúz</h1>
 </div>
+
+
+<div class="basebox center">
+
+	<div class="fixbox padding">
+
+		<div class="basebox col padding center">
+			<h2> &#60;fixbox&#62; is get fix 1100px width on simple displays, and change to 100% width on mobile devices.</h2><hr>
+			<p>Build a simple website design inside of &#60;fixbox&#62; with &#60;basebox&#62;</p>
+		</div>
+
+		<div class="basebox col-2 padding text-justify">
+			<img src="02.jpg">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+		</div>
+
+		<div class="basebox col-5 padding">
+
+			<div class="basebox"  style=" align-self: flex-start;">
+
+
+					<div class="basebox col">
+						<img src="01.jpg">
+					</div>
+					<div class="basebox col padding">
+						<h4>CÍM</h4><hr>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+
+				
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
 
 <div class="basebox row center margin">
 
@@ -77,149 +123,156 @@
 </div>
 
 <div class="basebox center margin padding">
-<h2>&#60;3 Preconfigured form, and button elements, to be an Amazing login session &#60;3</h2>
+	<h2>&#60;3 Preconfigured form, and button elements, to be an Amazing login session &#60;3</h2>
 </div>
 
 <div class="basebox center margin padding">
-	<form>
-		<div class="basebox center padding">INPUT TEXT:</div> 
-		<div class="basebox center"><input type="text"></div>
 
-		<div class="basebox center padding">INPUT TEXT:</div>
-		<div class="basebox center"><input type="text"></div>
+	<form class="fixbox">
+		<div class="basebox col center padding">USERNAME:</div> 
+		<div class="basebox col center"><input type="text" placeholder="Username"></div>
 
-		<div class="basebox">Checkbox<input type="checkbox"></div>
-		<div class="basebox">Option 1<input type="radio" name="test01"></div>
-		<div class="basebox">Option 2<input type="radio" name="test01"></div>
+		<div class="basebox col center padding">PASSWORD:</div>
+		<div class="basebox col center"><input type="password" placeholder="password"></div>
+
+
+		<div class="basebox col-6 margin-soft center padding">Checkbox</div>
+		<div class="basebox col-6 margin-soft center padding">
+			<input type="checkbox">
+		</div>
+
+		<div class="basebox col-6 margin-soft center padding">Option 1</div>
+		<div class="basebox col-6 margin-soft center padding">
+			<input type="radio" name="test01">
+		</div>
+
+		<div class="basebox col-6 margin-soft center padding">Option 2</div>
+		<div class="basebox col-6 margin-soft center padding">
+			<input type="radio" name="test01">
+		</div>
+
 		<hr>
-		<div class="button">Button</div>
-	</form>
-
-
-	<form>
-		<div class="basebox center padding">INPUT TEXT:</div>
-		<div class="basebox center"><input type="text"></div>
-
-		<div class="basebox center padding">INPUT TEXT:</div>
-		<div class="basebox center"><input type="text"></div>
-
-		<div class="basebox center">Checkbox <input type="checkbox"></div>
-		<div class="basebox center">Radio 1<input type="radio" name="test02"></div>
-		<div class="basebox center">Radio 2<input type="radio" name="test02"></div>
-		<hr>
-		<div class="button">Button</div>
+		<div class="button col">Button</div>
 	</form>
 	
 </div>
 
+
+<div class="basebox margin center">
+	<h2>Three baseboxes beside each other</h2>
+	<div class="basebox margin-soft center padding" style="background-color:purple">basebox</div>
+	<div class="basebox margin-soft center padding" style="background-color:purple">basebox</div>
+	<div class="basebox margin-soft center padding" style="background-color:purple">basebox</div>
+</div>
+
 <div class="basebox margin">
 	<div class="basebox col margin center padding">
-		<h2>Probably responsive col class form 1-6 column</h2>
+		<h2>Probably responsive col class: 1-6 column</h2>
 	</div>
 
-	<div class="testbox col-1 center">
+	<div class="testbox col-1 margin-soft padding center ">
    		COL-1
 	</div>
 
-	<div class="testbox col-2 center">
+	<div class="testbox col-2 margin-soft padding center">
 	   COL-2
 	</div>
-	<div class="testbox col-2 center">
+	<div class="testbox col-2 margin-soft padding center">
 	   COL-2
 	</div>
 
-	<div class="testbox col-3 center">
+	<div class="testbox col-3 margin-soft padding center">
 	   COL-3
 	</div>
-	<div class="testbox col-3 center">
+	<div class="testbox col-3 margin-soft padding center">
 	   COL-3
 	</div>
-	<div class="testbox col-3 center">
+	<div class="testbox col-3 margin-soft padding center">
 	   COL-3
 	</div>
 
-	<div class="testbox col-4 center">
+	<div class="testbox col-4 margin-soft padding center">
 	   COL-4
 	</div>
-	<div class="testbox col-4 center">
+	<div class="testbox col-4 margin-soft padding center">
 	   COL-4
 	</div>
-	<div class="testbox col-4 center">
+	<div class="testbox col-4 margin-soft padding center">
 	   COL-4
 	</div>
-	<div class="testbox col-4 center">
+	<div class="testbox col-4 margin-soft padding center">
 	   COL-4
 	</div>
 
-	<div class="testbox col-5 center">
+	<div class="testbox col-5 margin-soft padding center">
 	   COL-5
 	</div>
-	<div class="testbox col-5 center">
+	<div class="testbox col-5 margin-soft padding center">
 	   COL-5
 	</div>
-	<div class="testbox col-5 center">
+	<div class="testbox col-5 margin-soft padding center">
 	   COL-5
 	</div>
-	<div class="testbox col-5 center">
+	<div class="testbox col-5 margin-soft padding center">
 	   COL-5
 	</div>
-	<div class="testbox col-5 center">
+	<div class="testbox col-5 margin-soft padding center">
 	   COL-5
 	</div>
 
-	<div class="testbox col-6 center">
+	<div class="testbox col-6 margin-soft padding center">
 	   COL-6
 	</div>
-	<div class="testbox col-6 center">
+	<div class="testbox col-6 margin-soft padding center">
 	   COL-6
 	</div>
-	<div class="testbox col-6 center">
+	<div class="testbox col-6 margin-soft padding center">
 	   COL-6
 	</div>
-	<div class="testbox col-6 center">
+	<div class="testbox col-6 margin-soft padding center">
 	   COL-6
 	</div>
-	<div class="testbox col-6 center">
+	<div class="testbox col-6 margin-soft padding center">
 	   COL-6
 	</div>
-	<div class="testbox col-6 center">
+	<div class="testbox col-6 margin-soft padding center">
 	   COL-6
 	</div>
 
-<div class="basebox col margin center">col-2 + (3x col-6)</div>
+<div class="basebox col margin padding center">col-2 + (3x col-6)</div>
 
-	<div class="testbox col-2 center">
+	<div class="testbox col-2 margin-soft padding center">
    		COL-2
 	</div>
-	<div class="testbox col-6 center">
+	<div class="testbox col-6 margin-soft padding center">
 	   COL-6
 	</div>
-	<div class="testbox col-6 center">
+	<div class="testbox col-6 margin-soft padding center">
 	   COL-6
 	</div>
-	<div class="testbox col-6 center">
+	<div class="testbox col-6 margin-soft padding center">
 	   COL-6
 	</div>
 
-	<div class="basebox col margin center">2x col-4 + col-2</div>
-	<div class="testbox col-4 center">
+	<div class="basebox col margin padding center">2x col-4 + col-2</div>
+	<div class="testbox col-4 margin-soft padding center">
    		COL-4
 	</div>
-	<div class="testbox col-4 center">
+	<div class="testbox col-4 margin-soft padding center">
    		COL-4
 	</div>
-	<div class="testbox col-2 center">
+	<div class="testbox col-2 margin-soft padding center">
    		COL-2
 	</div>
 
-	<div class="basebox col margin center">col-4 + col-2 + col-4</div>
-	<div class="testbox col-4 center">
+	<div class="basebox col margin padding center">col-4 + col-2 + col-4</div>
+	<div class="testbox col-4 margin-soft padding center">
    		COL-4
 	</div>
-	<div class="testbox col-2 center">
+	<div class="testbox col-2 margin-soft padding center">
    		COL-2
 	</div>
-	<div class="testbox col-4 center">
+	<div class="testbox col-4 margin-soft padding center">
    		COL-4
 	</div>
 
@@ -227,32 +280,28 @@
 
 
 <div class="basebox margin center" style="">
-	<div class="basebox col margin center"><h2>Cards, from "extras.css", because fancy</h2></div>
-	<div class=" center card" style="">basebox<hr><a href="Morfyum_fhd.jpg"><img src="Morfyum_fhd.jpg"></a></div>
-	<div class=" center card" style="">basebox<hr><a href="Untitled-03.jpg"><img src="Untitled-03.jpg"></a></div>
-	<div class=" center card" style="">basebox<hr><a href="202004-test-14.jpg"><img src="202004-test-14.jpg"></a></div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
-	<div class=" center card" style="">basebox</div>
+	<div class="fixbox margin center">
+		<div class="basebox col margin center"><h2>Cards, from "extras.css", because fancy</h2></div>
+		<div class=" center card" style="">basebox<hr><a href="01.jpg"><img src="01.jpg"></a></div>
+		<div class=" center card" style="">basebox<hr><a href="02.jpg"><img src="02.jpg"></a></div>
+		<div class=" center card" style="">basebox<hr><a href="03.jpg"><img src="03.jpg"></a></div>
+		<div class=" center card" style="">basebox</div>
+		<div class=" center card" style="">basebox</div>
+		<div class=" center card" style="">basebox</div>
+		<div class=" center card" style="">basebox</div>
+		<div class=" center card" style="">basebox</div>
+		<div class=" center card" style="">basebox</div>
+		<div class=" center card" style="">basebox</div>
+		<div class=" center card" style="">basebox</div>
+		<div class=" center card" style="">basebox</div>
+	</div>
 </div>
 
 <div class="basebox margin center padding">
    <h2>Expandable <strong>&#160;&#60;footer&#62;&#160;</strong> with col-6 divs</h2>
 </div>
 
-<footer class="row center">
+<footer class="basebox center">
 
 	<div class="basebox col-6">
 		<div class="basebox col center">Developer</div><hr>
@@ -272,7 +321,7 @@
 		<div class="basebox col center">Useful tools</div><hr>
 		<div class="basebox col center padding"><a href="https://www.whatsmyip.org/html-characters/" target="blank_10">Special Characters</a></div>
 		<div class="basebox col center padding"><a href="https://www.pexels.com/" target="blank_10">Free Pictures from Pexels</a></div>
-		<div class="basebox col center padding"></div>
+		<div class="basebox col center padding"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="blank_10">css-tricks Flexbox</a></div>
 	</div>
 
 </footer>

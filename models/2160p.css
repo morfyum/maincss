@@ -1,7 +1,7 @@
 @media screen and (min-width: 2160px) {
 
 	body{
-	  font-size: 2rem; !important;
+	  font-size: 2rem;
 	}
 
 	.basebox{
@@ -19,8 +19,8 @@
 	}
 
 	#unique-slideshow{
-	  width: 2000px !important;
-	  height: 1000px !important;
+	  width: 2000px;
+	  height: 1000px;
 	}
 
 	footer{

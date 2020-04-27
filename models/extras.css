@@ -1,3 +1,5 @@
+
+/**/
 .image-slide{
   display: none;
 
@@ -9,7 +11,7 @@
 }
 
 #unique-slideshow{
-  width: 1200px;
+  width: 900px;
   height: 460px;
 
   margin: 0 0.5rem 0 0.5rem;
@@ -21,15 +23,18 @@
 
   /*background-color: orange;*/
 }
+/**/
 
+/* Out of use*/
 .adbox{
   max-width: 300px;
-  width: 200px !important;
+  width: 200px;
   min-width: 200px;
   max-height: 460px;
   overflow-y: auto;
   overflow-x: hidden;
 
+  
   padding: 0.5rem;
   text-align: justify;
   font-size: 1vw;
@@ -65,10 +70,10 @@
   background-color: rgba(255, 255, 255, 1);
 
 
- background: linear-gradient(45deg,  rgba(255, 255, 255), rgba(140, 140, 140, 0.5));
-    background-size: 200% 100%;
-    background-position:right bottom;
-    transition:all .5s ease;
+  background: linear-gradient(45deg,  rgba(255, 255, 255), rgba(140, 140, 140, 0.5));
+  background-size: 200% 100%;
+  background-position:right bottom;
+  transition:all .5s ease;
 }
 
 /* BACKGROUND GRADIENT INFINITY EFFECT 
