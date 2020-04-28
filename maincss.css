@@ -50,31 +50,28 @@ body{
   background-color: var(--main-light-color)
 }
 
-  /* A flex utasítások mindig az elem belsejére hatnak, nem magára az elemre.
-     Így például a "flex-direction: row;" utasítás nem a flex elemeket rendezi,
-     hanem a benne elhelyezett elemek elrendezését fogja megszabni.
-  */
+   /* A flex utasítások mindig az elem belsejére hatnak, nem magára az elemre.
+   Így például a "flex-direction: row;" utasítás nem a flex elemet rendezi,
+   hanem a benne elhelyezett elemek elrendezését fogja megszabni.*/
 
 .testbox{
-
-
   background-color: orange;
 }
 
+/* MAIN CONTAINER CLASSES */
 .basebox{
   display: flex;
   min-height: 20px;
 
   /*align-self: flex-start; /*Felülírja a függőleges kitöltést*/
-  align-items: center;
+  align-items: stretch;
   /*flex-basis: auto;*/
   /*flex-direction: row;*/
 
   flex-grow: 1;
   flex-wrap: wrap;
 
-  /*margin: 0.5rem; /* később kivehető*/
-  /*padding: 0.5rem; */
+  /*background-color: rgba(240, 240, 240)*/
 }
 
 .fixbox{
@@ -91,21 +88,26 @@ body{
   /*background-color: rgba(54, 54, 54, 1);*/
 }
 
-/* .padding-soft: 1px & .margin-soft: 1px */
+/* MAIN CONTAINER CLASSES END*/
 
-/* MARGIN AND PADDING STLYES */
+/* Display: none in 768p.css */
+.hide-on-mobile{}
 
-.padding{padding: 0.5rem;}
-.padding-soft{padding: 1px;}
+/* ===== DESIGN ELEMENTS ===== */
 
-.margin{margin: 0.5rem;}
-.margin-soft{margin: 1px;}
-/* MARGIN AND PADDING STLYES END */
+	.padding{padding: 0.5rem;}
+	.padding-soft{padding: 1px;}
 
-.text-left{text-align: left;}
-.text-center{text-align: center; justify-content: center;}
-.text-justify{text-align: justify;}
-.text-right{text-align: right;}
+	.margin{margin: 0.5rem;}
+	.margin-soft{margin: 1px;}
+
+
+	.text-left{text-align: left;}
+	.text-center{text-align: center; justify-content: center;}
+	.text-justify{text-align: justify;}
+	.text-right{text-align: right;}
+
+/* ===== DESIGN ELEMENTS END ===== */
 
 .item-left{}
 .item-center{}
@@ -117,30 +119,17 @@ body{
   align-items: center; /* full-center */
 }
 
-/* ROW IS EQUAL WITH basebox
-.row{
-  flex-wrap: wrap;
-
-  flex-direction: row;
-
-}*/
-
 .col{
   min-height: 20px;
   flex-basis: 100%;
 
   flex-grow: 1;
 
-  /*Megjelenítési gond esetén, ezt kell kapcsolni!!! Sorok most nem tördelődnek automatikusan*/
+  /* A nowrap nem engedi a doboz tartalmát új sorba törni. Ha túl nagy, ki fog lógni */
   /*flex-wrap: nowrap;*/
-
  /* flex-basis: 100%;
-
-  flex-grow: 1;
   /*flex-direction: column !important;*/
-
 }
-
 
 .col-1{/* 1/1 = 100% */
   width: 100%;
@@ -181,7 +170,7 @@ body{
   flex-shrink: 6;
 }
 
-
+/* BUTTON */
 .button{
   height: 15px;
 
@@ -200,6 +189,7 @@ body{
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 0px 1px 1px;
 }
+/* BUTTON END */
 
 footer{
   min-height: 150px;
@@ -215,9 +205,7 @@ footer{
   background-color: var(--main-dark-color);
 }
 
-fieldset{
-  border: 1px solid;
-}
+fieldset{ border: 1px solid;}
 
 input{
   min-height: 20px;
@@ -237,7 +225,6 @@ img{
   background-size: cover;
 }
 
-
 hr{
   width: 90%;
   height: 0px;
@@ -247,26 +234,18 @@ hr{
 h1, h2, h3, h4, h5, h6{
   width: 100%;
 }
+
 p{text-align: justify;}
 
 /* LINK FORMATS */
-a:link {
-  text-decoration: none;
-  color: var(--font-color-for-all);
-}
-a:visited {
-  color: var(--font-color-for-all);
-}
-a:hover {
-  color: var(--font-color-for-all);
-}
-a:active {
-  color: var(--font-color-for-all);
-}
+	a:link {text-decoration: none; color: var(--font-color-for-all);}
+	a:visited {color: var(--font-color-for-all);}
+	a:hover {color: var(--font-color-for-all);}
+	a:active {color: var(--font-color-for-all);}
+/* LINK FORMATS END*/
 
-/* CHECKBOX LABEL DESIGN 
-   SOURCE: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
-   TODO: Mobile view!!! <3 
+/*	CHECKBOX LABEL DESIGN
+	SOURCE: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
 */
 /* Customize the label (the container) */
 .checkbox-label {

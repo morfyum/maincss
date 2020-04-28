@@ -4,68 +4,72 @@
 
 	/* MAINCSS.CSS */
 
+	.hide-on-mobile{
+		display: none;
+	}
+
 	.fixbox{
-	  width: 100%;
-	  /*box-shadow: 0px 0px 7px 1px;*/
+		width: 100%;
+		/*box-shadow: 0px 0px 7px 1px;*/
 	}
 
 	.col-1{
-	  width: 100%;
-  	  min-width: auto;
+		width: 100%;
+		min-width: auto;
 	}
 	.col-2{
-	  width: 100%;
-  	  min-width: auto;
+		width: 100%;
+		min-width: auto;
 	}
 	.col-3{
-	  width: 100%;
-	  min-width: auto;
+		width: 100%;
+		min-width: auto;
 	}
 	.col-4{
-	  width: 100%;
-	  min-width: auto;	
+		width: 100%;
+		min-width: auto;	
 	}
 	.col-5{
-	  width: 100%;
-	  min-width: auto;	
+		width: 100%;
+		min-width: auto;	
 	}
 	.col-6{
-	  width: 100%;
-	  min-width: auto;
+		width: 100%;
+		min-width: auto;
 	}
 
 	#unique-slideshow{
-	  width: 100%;
-	  height: 200px !important;
-	  margin: 0rem;
-	  align-items: flex-start;
- 	  background-color: orange;
+		width: 100%;
+		height: 200px !important;
+		margin: 0rem;
+		align-items: flex-start;
+		background-color: orange;
 	}
 
 	hr{
-	  width: 100%;
+		width: 100%;
 	}
 
 	.checkbox-label{
-	  width: 100%;
+		width: 100%;
 	}
 	/* MAINCSS.CSS END */
 
 	 /* EXTRAS.CSS */
 	.adbox{
-	  display: none;
+		display: none;
 	}
 
 
 	.card{
-	  width: 100%;
-	  height: auto;
-	  margin: 10px 10px 10px 10px;
+		width: 100%;
+		height: auto;
+		margin: 10px 10px 10px 10px;
 	}
 	.card:hover{
-	  width: 100%;
-	  height: auto;
-	  margin: 10px 10px 10px 10px;
+		width: 100%;
+		height: auto;
+		margin: 10px 10px 10px 10px;
 	}
 	/* EXTRAS.CSS END */
 }
