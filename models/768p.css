@@ -2,10 +2,13 @@
 /* For Small screen devices. This is the most smaller screen in phone family */
 
 
+	/* MAINCSS.CSS */
+
 	.fixbox{
 	  width: 100%;
+	  /*box-shadow: 0px 0px 7px 1px;*/
 	}
-	/* MAINCSS.CSS */
+
 	.col-1{
 	  width: 100%;
   	  min-width: auto;
