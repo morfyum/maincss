@@ -41,7 +41,10 @@ Padding & Margin elements:<br>
 
 Text align elements
 ```
-.text-left, center, justify, right
+.text-left
+.text-center
+.text-justify
+.text-right
 ```
 
 TODO
