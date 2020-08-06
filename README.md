@@ -2,10 +2,10 @@
 
 ## Basic Flexbox CSS template: responsive, modern, and flexible
 
-Test Template features on maincss github Page:<br>
+Test Template features:<br>
 https://morfyum.github.io/maincss/
 
-### Example for CSS deploy script:
+### Example for CSS deploy:
   ```find ./ -name "*.css" -exec cat {} \; > productcss.css```
 
 
