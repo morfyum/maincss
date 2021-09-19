@@ -158,6 +158,14 @@ body{
   align-items: center; /* full-center */
 }
 
+.row {
+  min-height: 20px;
+  flex-basis: 100%;
+
+  flex-grow: 1;
+
+}
+
 .col{
   min-height: 20px;
   flex-basis: 100%;
