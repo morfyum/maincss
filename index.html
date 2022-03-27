@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>maincss</title>
-	<meta 
+	<meta
 	    name="description"
 	    content="Lightweight, easy, and transparant css framework for
 		     beginners, and experts. This CSS use flexbox style
@@ -20,41 +20,136 @@
 
 </head>
 <body>
-<header>
-            <div class="topnav" id="myTopnav">
-                <a href="#mainpage" class="active">INDEX.html</a>
-                <a href="#">Bolt</a>
-                <a href="#blog">Blog</a>
-                <a href="#it-services">IT Services</a>
-                <div class="dropdown">
-                    <div class="dropbtn">Egyéb
-                        <i class="fa fa-caret-down"></i>
-                    </div>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
-                <a href="{% url 'about' %}">About</a>
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 
-                <a href="#login" class="rightnav">Login</a>
-                <a href="#regist" class="rightnav">Regist</a>
-            </div>
+	<div class="header-flex">
 
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("myTopnav");
-                    if (x.className === "topnav") {
-                        x.className += " responsive";
-                    } else {
-                        x.className = "topnav";
-                    }
-                }
-            </script>
+		<div class="basebox header-flex-left-content">
 
-        </header>
+			<div class="header-flex-element">
+				Morfyum
+			</div>
+
+			<a href="models/facestyle/facestyle.html">
+				<div class="header-flex-element">
+					Facestyle
+				</div>
+			</a>
+
+			<div class="header-flex-element">
+				DropDown
+				<div class="header-flex-dropdown">
+
+					<div class="header-flex-element">
+						Menu 1
+					</div>
+
+					<div class="header-flex-element">
+						Menu 2
+					</div>
+
+					<div class="header-flex-element">
+						Menu 3
+					</div>
+
+				</div>
+			</div>
+
+			<a href="./flex.html">
+			<div class="header-flex-element">
+				Flex
+			</div>
+			</a>
+
+			<div class="header-flex-element">
+				Button 3
+			</div>
+
+			<div class="header-flex-element">
+				Button 4
+			</div>
+
+
+		</div>
+
+		<div class="basebox header-flex-right-content">
+
+			<div class="header-flex-element theme-button thb-light" onclick="setTheme('light')">
+					Light
+			</div>
+
+			<div class="header-flex-element theme-button thb-dark" onclick="setTheme('dark')">
+					Dark
+			</div>
+
+			<div class="header-flex-element">
+				☰
+				<div class="header-flex-dropdown">
+
+					<div class="header-flex-element basebox">
+						Right menu Button 1
+					</div>
+
+					<div class="header-flex-element basebox">
+						Right menu Button 2
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+	</div>
+
+	<!--header>
+		<div class="topnav" id="myTopnav">
+		    <a href="#mainpage" class="active">INDEX.html</a>
+		    <a href="#">Bolt</a>
+		    <a href="#blog">Blog</a>
+		    <a href="#it-services">IT Services</a>
+		    <div class="dropdown">
+		        <div class="dropbtn">Egyéb
+		            <i class="fa fa-caret-down"></i>
+		        </div>
+		        <div class="dropdown-content">
+		            <a href="#">Link 1</a>
+		            <a href="#">Link 2</a>
+		            <a href="#">Link 3</a>
+		        </div>
+		    </div>
+		    <a href="{% url 'about' %}">About</a>
+		    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+		    <a href="#login" class="rightnav">Login</a>
+		    <a href="#regist" class="rightnav">Regist</a>
+		</div>
+
+		<script>
+		    function myFunction() {
+		        var x = document.getElementById("myTopnav");
+		        if (x.className === "topnav") {
+		            x.className += " responsive";
+		        } else {
+		            x.className = "topnav";
+		        }
+		    }
+		</script>
+
+	</header-->
+
+
+<!--div class="popup">
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+		<strong>Popup</strong><br>
+
+
+	<div class="basebox row testbox">
+	</div>
+
+</div-->
+
 
 <div class="basebox center img-background-index" >
 	<div class="basebox col center">
@@ -114,7 +209,8 @@
 			----------- | -------------<br>
 			1 | 2 | 3 | - | D | E | F |<br>
 			A | B | C | - | 4 | 5 | 6 |
-			</div> <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+			<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 		</div>
 
 		<div class="basebox col-5 padding">
@@ -130,7 +226,7 @@
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 					</div>
 
-				
+
 			</div>
 
 		</div>
@@ -143,20 +239,20 @@
 <div class="basebox row center margin">
 
 	<div class="alert">
-		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 		<strong>Warning buttons</strong><br>
 		Alert windows in 4 different color type from extras.css. <br> This is the default.
 	</div>
 	<div class="alert red">
-		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 		THIS IS RED ALERT
 	</div>
 	<div class="alert orange">
-		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 		THIS IS ORANGE ALERT
 	</div>
 	<div class="alert green">
-		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 		AND THIS IS A SUCCES GREEN
 	</div>
 
@@ -170,28 +266,32 @@
 <div class="basebox center margin padding">
 
 	<form class="fixbox">
-		<div class="basebox col center padding">USERNAME:</div> 
+		<div class="basebox col center padding">USERNAME:</div>
 		<div class="basebox col center"><input type="text" placeholder="Username"></div>
 
 		<div class="basebox col center padding">PASSWORD:</div>
 		<div class="basebox col center"><input type="password" placeholder="password"></div>
 
 		<div class="basebox margin-soft center padding">
-			<label for="checkbox" class="checkbox-label margin">
-				Checkbox
-				<input id="checkbox" type="checkbox" checked="checked">
+
+			<label for="any" class="checkbox-label margin">
+				Any
+				<input id="any" type="checkbox" checked="checked">
 				<span class="checkmark"></span>
 			</label>
-			<label for="tow" class="checkbox-label margin">
+
+			<label for="two" class="checkbox-label margin">
 				Two
 				<input id="two" type="checkbox">
 				<span class="checkmark"></span>
 			</label>
+
 			<label for="tooloong" class="checkbox-label margin">
 				Toooo loooooong teeeeext
 				<input id="tooloong" type="checkbox">
 				<span class="checkmark"></span>
 			</label>
+
 		</div>
 		<div class="basebox margin-soft center padding">
 			<label for="checkbox2" class="checkbox-label margin">
@@ -205,7 +305,7 @@
 				<span class="checkmark"></span>
 			</label>
 			<label for="other2" class="checkbox-label margin">
-				Other 2
+				Other
 				<input id="other2" type="checkbox">
 				<span class="checkmark"></span>
 			</label>
@@ -215,17 +315,17 @@
 
 		<div class="basebox margin-soft center padding">
 			<label for="radiobutt01" class="checkbox-label margin">
-				Radio button 01
+				Radio button 1/1
 				<input id="radiobutt01" type="radio" checked="checked" name="test01">
 				<span class="radiomark"></span>
 			</label>
 			<label for="radio2" class="checkbox-label margin">
-				Radio 2
+				Radio 1/2
 				<input id="radio2" type="radio" name="test01">
 				<span class="radiomark"></span>
 			</label>
 			<label for="radiOther" class="checkbox-label margin">
-				Radio Other
+				Radio Other 1/3
 				<input id="radiOther" type="radio" name="test01">
 				<span class="radiomark"></span>
 			</label>
@@ -233,17 +333,17 @@
 
 		<div class="basebox margin-soft center padding">
 			<label for="radiobutt03" class="checkbox-label margin">
-				Radio button 03
+				Radio button 2/1
 				<input id="radiobutt03" type="radio" checked="checked" name="test02">
 				<span class="radiomark"></span>
 			</label>
 			<label for="radio4" class="checkbox-label margin">
-				Radio 4
+				Radio 2/2
 				<input id="radio4" type="radio" name="test02">
 				<span class="radiomark"></span>
 			</label>
 			<label for="radiOther2" class="checkbox-label margin">
-				Radio Other 2
+				Radio Other 2/3
 				<input id="radiOther2" type="radio" name="test02">
 				<span class="radiomark"></span>
 			</label>
@@ -253,7 +353,7 @@
 		<hr>
 		<div class="button col">Button</div>
 	</form>
-	
+
 </div>
 
 
@@ -381,18 +481,28 @@
 <div class="basebox margin center" style="">
 	<div class="fixbox margin center">
 		<div class="basebox col margin center"><h2>Cards, from "extras.css", because fancy</h2></div>
-		<div class=" center card" style="">basebox<hr><a href="01.jpg"><img src="01.jpg" alt="Basebox example: morfyum"></a></div>
-		<div class=" center card" style="">basebox<hr><a href="02.jpg"><img src="02.jpg" alt="Basebox example: Lake with mountains"></a></div>
-		<div class=" center card" style="">basebox<hr><a href="03.jpg"><img src="03.jpg" alt="Basebox example: stay-at-home css"></a></div>
-		<div class=" center card" style="">basebox</div>
-		<div class=" center card" style="">basebox</div>
-		<div class=" center card" style="">basebox</div>
-		<div class=" center card" style="">basebox</div>
-		<div class=" center card" style="">basebox</div>
-		<div class=" center card" style="">basebox</div>
-		<div class=" center card" style="">basebox</div>
-		<div class=" center card" style="">basebox</div>
-		<div class=" center card" style="">basebox</div>
+		<div class=" center card" style="">
+			Card<hr>
+			<a href="01.jpg">
+				<img src="01.jpg" alt="Basebox example: morfyum">
+			</a>
+		</div>
+		<div class=" center card" style="">
+			Card<hr>
+			<a href="02.jpg">
+				<img src="02.jpg" alt="Basebox example: Lake with mountains">
+			</a>
+		</div>
+		<div class=" center card" style="">Card<hr><a href="03.jpg"><img src="03.jpg" alt="Basebox example: stay-at-home css"></a></div>
+		<div class=" center card" style="">Card</div>
+		<div class=" center card" style="">Card</div>
+		<div class=" center card" style="">Card</div>
+		<div class=" center card" style="">Card</div>
+		<div class=" center card" style="">Card</div>
+		<div class=" center card" style="">Card</div>
+		<div class=" center card" style="">Card</div>
+		<div class=" center card" style="">Card</div>
+		<div class=" center card" style="">Card</div>
 	</div>
 </div>
 
@@ -431,3 +541,18 @@
 
 </body>
 </html>
+
+
+<script>
+
+/* Dark / Light theme switcher */
+const setTheme = theme => document.documentElement.className = theme;
+
+/* Unused JS */
+function darkMode() {
+   /*var element = document.body;
+   element.classList.toggle("dark-mode");*/
+   document.documentElement.style.setProperty('--default-background', 'var(--dark-background)');
+}
+
+</script>

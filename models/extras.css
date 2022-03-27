@@ -25,13 +25,14 @@
   height: 60px;
 
   margin: 10px;
-  border-radius: 1rem;  
+  border-radius: 1rem;
   padding: 0.5rem;
-  box-shadow: 0px 0px 7px 1px;
-  color: var(--font-color-for-light);
-  
-  background-color: rgba(255, 255, 255, 1);
-  background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+  /*box-shadow: 0px 0px 7px 1px;*/
+  /*box-shadow: 0px 0px 7px var(--default-item);*/
+  color: var(--default-font);
+
+  background-color: var(--default-background);
+  /*background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);*/
 }
 
 .top-wide-box-link{
@@ -41,21 +42,24 @@
   margin: 7px;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  box-shadow: 0px 0px 7px 1px #000;
-  color: var(--font-color-for-dark);
+  /* box-shadow: 0px 0px 7px 1px #000;*/
+  color: var(--default-font);
 
-  background-image: linear-gradient(to bottom,rgba(51, 51, 51, 0.75) 0,rgba(0, 0, 0, 0.75) 100%);
+  opacity: 0.75;
+  background-image: linear-gradient(to bottom, var(--default-background) 0, var(--default-item) 100%);
+  /*background-image: linear-gradient(to bottom,rgba(46, 52, 54, 0.75) 0,rgba(0, 0, 0, 0.9) 100%);*/
 }
 
 
 .source-code{
-  color: var(--font-color-for-dark);
+  color: rgba(255, 255, 255);
   padding: 1rem;
-  margin: 0;
+  /*margin: 0;*/
   font-family: "Courier New", Courier, monospace;
   border-radius: 7px;
-  border: 1px solid #111;
-  background-color: rgba(51, 51, 51, 1);
+  box-shadow: 0px 0px 7px var(--default-item);
+  /*border: 1px solid #111;*/
+  background-color: rgba(46, 52, 54, 1);
 }
 
 /**/
@@ -93,7 +97,7 @@
   overflow-y: auto;
   overflow-x: hidden;
 
-  
+
   padding: 0.5rem;
   text-align: justify;
   font-size: 1vw;
@@ -113,30 +117,29 @@
   padding: 0.5rem;
 
   border-radius: 3px;
-  box-shadow: 0px 0px 7px;
-  background-color: rgba(240, 240, 240, 1);
+  transition: 0.75s;
+  box-shadow: 0px 0px 7px var(--default-item);
+  background-color: var(--default-background);
 }
 
 .card:hover{
   width: 220px;
   height: 270px;
 
-  transition: 0.25s;
-
   margin: 10px 15px 10px 15px;
 
   /*transform:rotate(4deg) translate(5%);*/
-  background-color: rgba(255, 255, 255, 1);
+  /*background-color: var(--default-background);*/
 
 
   background: linear-gradient(45deg,  rgba(255, 255, 255), rgba(140, 140, 140, 0.5));
   background-size: 200% 100%;
   background-position:right bottom;
-  transition:all .5s ease;
+
 }
 
-/* BACKGROUND GRADIENT INFINITY EFFECT 
-   EATING CUP, DO NOT USE IT XD 
+/* BACKGROUND GRADIENT INFINITY EFFECT
+   EATING CUP, DO NOT USE IT XD
 */
 
 #background-gradient{
@@ -158,11 +161,11 @@
 }
 
 
-/*  CSS ALERT 
+/*  CSS ALERT
 CODE EXAMPLE:
 
 <div class="alert">
-	<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+	<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 	<strong>Danger!</strong> Indicates a dangerous or potentially negative action.
 </div>
 
@@ -171,7 +174,7 @@ CODE EXAMPLE:
   background-color: rgba(255, 0, 0, 1) !important;
 }
 .orange{
-  background-color: var(--font-color-for-all) !important;
+  background-color: rgba(255, 165, 0, 1) !important;
 }
 .green{
   background-color: rgba(40, 200, 40, 1) !important;
@@ -181,13 +184,13 @@ CODE EXAMPLE:
   width: 100%;
   margin: 0.25rem;
   padding: 20px;
-  background-color: #333333;
-  color: #fff;
+  border-radius: 13px;
+  background-color: var(--default-item);
+  color: var(--default-font)
 }
 
 .closebtn {
   margin-left: 15px;
-  color: white;
   font-weight: bold;
   float: right;
   font-size: 22px;
@@ -195,4 +198,130 @@ CODE EXAMPLE:
   cursor: pointer;
   transition: 0.3s;
   padding: 0.75rem;
+  color: var(--default-font);
+}
+
+
+/* FLEXBOX POPUP 2022-03-26 */
+.popup {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 35px;
+    bottom: 0;
+
+    margin: 0.5rem 10rem 0.5rem 10rem;
+
+    border-radius: 13px;
+
+    /*
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    */
+
+    /*align-self: flex-start; /*Felülírja a függőleges kitöltést*/
+    align-items: stretch;
+    /*flex-basis: auto;*/
+    /*flex-direction: row;*/
+
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+    z-index: 100;
+
+    width: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 7px var(--default-item);
+    color: var(--default-font);
+    background-color: var(--default-background);
+}
+
+
+
+/* NEW FLEXBOX HEADER  2022-03-26*/
+
+.header-flex {
+    background-color: var(--default-background);
+    display: flex;
+    min-height: 40px;
+
+    display: flex;
+
+    align-items: stretch;
+
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+}
+
+.header-flex-element{
+
+    display: flex;
+
+    margin: 3px 0px 3px 3px;
+    padding: 7px 13px 7px 13px;
+    border-radius: 23px;
+
+    /*align-self: flex-start; /*Felülírja a függőleges kitöltést*/
+    /*align-items: stretch;*/
+    /*flex-basis: auto;*/
+    /*flex-direction: row;*/
+
+    /*
+    flex-grow: 1;
+    flex-wrap: wrap;
+    */
+
+    background-color: inherit;
+
+    /*background-color: rgba(240, 240, 240)*/
+
+}
+
+.header-flex-element:hover{
+    display: flex;
+    background-color: var(--default-item);
+}
+
+.header-flex-dropdown{
+    display: none;
+    background-color: inherit;
+}
+
+/* MODIFY: .header-flex-dropdwon under
+.header-flex-element:hover */
+.header-flex-element:hover .header-flex-dropdown {
+    position: absolute;
+    display: flex;
+
+    min-height: 20px;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+    top: 37px;
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+
+    padding: 10px;
+    background-color: var(--default-background);
+    color: var(--default-font);
+}
+
+/* LEFT AND RIGHT CONTENT CONTAINERS */
+.header-flex-left-content{
+    display: flex;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.header-flex-right-content{
+    display: flex;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }

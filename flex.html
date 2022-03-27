@@ -13,7 +13,87 @@
 
 </head>
 <body>
-		<header>
+
+
+	<div class="header-flex">
+
+		<div class="basebox header-flex-left-content">
+
+			<a href="./index.html">
+			<div class="header-flex-element">
+				Morfyum
+			</div>
+			</a>
+
+			<div class="header-flex-element">
+				Button 1
+			</div>
+
+			<div class="header-flex-element">
+				DropDown
+				<div class="header-flex-dropdown">
+
+					<div class="header-flex-element">
+						Menu 1
+					</div>
+
+					<div class="header-flex-element">
+						Menu 2
+					</div>
+
+					<div class="header-flex-element">
+						Menu 3
+					</div>
+
+				</div>
+			</div>
+
+			<div class="header-flex-element">
+				Button 2
+			</div>
+
+			<div class="header-flex-element">
+				Button 3
+			</div>
+
+			<div class="header-flex-element">
+				Button 4
+			</div>
+
+
+		</div>
+
+		<div class="basebox header-flex-right-content">
+
+			<div class="header-flex-element theme-button thb-light" onclick="setTheme('light')">
+					Light
+			</div>
+
+			<div class="header-flex-element theme-button thb-dark" onclick="setTheme('dark')">
+					Dark
+			</div>
+
+			<div class="header-flex-element">
+				☰
+				<div class="header-flex-dropdown">
+
+					<div class="header-flex-element basebox">
+						Right menu Button 1
+					</div>
+
+					<div class="header-flex-element basebox">
+						Right menu Button 2
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+		<!--header>
             <div class="topnav" id="myTopnav">
                 <a href="#mainpage" class="active">FLEX.html</a>
                 <a href="#">Bolt</a>
@@ -47,7 +127,7 @@
                 }
             </script>
 
-        </header>
+        </header-->
 
 
 <!--div class="basebox center" style="">
@@ -94,3 +174,8 @@
 
 </body>
 </html>
+
+<script type="text/javascript">
+	/* Dark / Light theme switcher */
+	const setTheme = theme => document.documentElement.className = theme;
+</script>

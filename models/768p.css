@@ -1,5 +1,7 @@
 @media screen and (max-width: 768px) {
-/* For Small screen devices. This is the most smaller screen in phone family */
+/* For Small screen devices.
+This is the most smaller screen in phone family
+*/
 
 
 	/* MAINCSS.CSS */
@@ -33,11 +35,11 @@
 	}
 	.col-4{
 		width: 100%;
-		min-width: auto;	
+		min-width: auto;
 	}
 	.col-5{
 		width: 100%;
-		min-width: auto;	
+		min-width: auto;
 	}
 	.col-6{
 		width: 100%;
@@ -77,11 +79,20 @@
 		height: auto;
 		margin: 10px 10px 10px 10px;
 	}
-	
+
 	.top-box-link{
 	  width: 85px;
 	  height: 85px;
-	
+
 	}
 	/* EXTRAS.CSS END */
+
+	.popup {
+		margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+	}
+
+	/* HIDE SCROLLBAR ON MOBILE VIEW*/
+	::-webkit-scrollbar {
+		width: 0px;
+	}
 }

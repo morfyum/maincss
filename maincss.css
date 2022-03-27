@@ -1,4 +1,4 @@
-/* 
+/*
 Move all css file into the one "productcss.css" file.
 	find . -name "*.css" -exec cat {} \; > productcss.css.
 */
@@ -22,20 +22,48 @@ Move all css file into the one "productcss.css" file.
 */
 
 /* ##### GLOBAL VARIABLES ##### */
-:root{
-  /* LIGHT THEME */
-  --main-light-color: rgba(255, 255, 255, 1);
-  --font-color-for-light: rgba(0, 0, 0, 1);
-  --item-light-color: rgba(240, 240, 240, 1);
 
-  /* DARK THEME */
-  --main-dark-color: rgba(51, 51, 51, 1);
-  --font-color-for-dark: rgba(255, 255, 255, 1);
-  --item-dark-color: rgba(240, 240, 240, 1);
+:root,
+:root.light{
+    --default-background: rgba(255, 255, 255, 1);
+    --default-font: rgba(0, 0, 0, 1);
+    --default-item: rgba(230, 230, 230, 1);
 
-  /* MIXED THEME */
-  --font-color-for-all: rgba(255, 165, 0, 1) /* ORANGE */
 }
+:root.dark{
+    --default-background: rgba(46, 52, 54, 1);
+    --default-font: rgba(255, 255, 255, 1);
+    --default-item: rgba(30, 30, 30, 1);
+
+}
+
+
+
+:root{
+    /* DEFAULT COLORS */
+    /*
+    --default-background: rgba(255, 255, 255, 1);
+    --default-font: rgba(0, 0, 0, 1);
+    --default-item: rgba(240, 240, 240, 1);
+    */
+  /* LIGHT THEME */
+  /*
+  --light-background: rgba(255, 255, 255, 1);
+  --light-font: rgba(0, 0, 0, 1);
+  --light-item: rgba(240, 240, 240, 1);
+  */
+  /* DARK THEME */
+  /*
+  --dark-background: rgba(46, 52, 54, 1);
+  --dark-font: rgba(255, 255, 255, 1);
+  --dark-item: rgba(240, 240, 240, 1);
+  */
+  /* MIXED THEME */
+  --font-color-orange: rgba(255, 165, 0, 1) /* ORANGE */
+}
+
+
+
 /* ##### GLOBAL VARIABLES END ##### */
 html {
   scroll-behavior: smooth;
@@ -47,7 +75,8 @@ body{
   font-family: system-ui;
   font-size: 1rem;
 
-  background-color: var(--main-light-color)
+  background-color: var(--default-background);
+  color: var(--default-font);
 }
 
    /* A flex utasítások mindig az elem belsejére hatnak, nem magára az elemre.
@@ -55,21 +84,21 @@ body{
    hanem a benne elhelyezett elemek elrendezését fogja megszabni.*/
 
 .testbox{
-  background-color: orange;
+  background-color: orange !important;
 }
 
 /* MAIN CONTAINER CLASSES */
 .basebox{
   display: flex;
   min-height: 20px;
+  align-items: stretch;
+  flex-grow: 1;
+  flex-wrap: wrap;
 
   /*align-self: flex-start; /*Felülírja a függőleges kitöltést*/
-  align-items: stretch;
   /*flex-basis: auto;*/
   /*flex-direction: row;*/
 
-  flex-grow: 1;
-  flex-wrap: wrap;
 
   /*background-color: rgba(240, 240, 240)*/
 }
@@ -84,8 +113,10 @@ body{
 
   flex-wrap: wrap;
 
-  box-shadow: 0px 0px 7px 1px;
+  box-shadow: 0px 0px 7px var(--default-item);
+  /*box-shadow: 0px 0px 7px 1px var(--default-item);*/
   /*background-color: rgba(54, 54, 54, 1);*/
+  /*background-color: var(--default-item)*/
 }
 
 .base-col-2, .base-col-3, .base-col-4, .base-col-5, .base-col-6 {
@@ -227,15 +258,15 @@ body{
 
   margin: 7px;
   /*box-shadow: 0px 0px 1px 1px;*/
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
 
-  background-color: rgba(240, 240, 240, 1);
+    box-shadow: 0px 0px 7px var(--default-item);
+  background-color: var(--default-background);
 }
 .button:hover{
-  cursor: -webkit-grab;
-  cursor: grab;
-  background-color: rgba(255, 255, 255, 1);
-  /*box-shadow: 0px 0px 1px 1px;*/
+    cursor: -webkit-grab;
+    cursor: grab;
+    background-color: var(--default-item);
 }
 /* BUTTON END */
 
@@ -252,8 +283,8 @@ footer{
 
   padding: 1rem;
   /*color: var(--font-color-for-dark);*/
-  color: #fff;
-  background-color: var(--main-dark-color);
+  color: var(--default-font);
+  background-color: var(--default-item);
 }
 
 fieldset{ border: 1px solid;}
@@ -261,9 +292,13 @@ fieldset{ border: 1px solid;}
 input{
   min-height: 20px;
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.75rem;
   font-size: 1.25rem;
   outline: none;
+  border-radius: 23px;
+  background-color: var(--default-item);
+  border: 2px solid var(--default-item);
+  /*box-shadow: 0px 0px 7px var(--default-item);*/
 }
 
 img{
@@ -290,10 +325,10 @@ h1, h2, h3, h4, h5, h6{
 p{text-align: justify;}
 
 /* LINK FORMATS */
-	a:link {text-decoration: none; color: var(--font-color-for-all);}
-	a:visited {color: var(--font-color-for-all);}
-	a:hover {color: var(--font-color-for-all);}
-	a:active {color: var(--font-color-for-all);}
+	a:link {text-decoration: none; color: var(--default-font);}
+	a:visited {color: var(--default-font);}
+	a:hover {color: var(--font-color-orange);}
+	a:active {color: var(--default-font);}
 /* LINK FORMATS END*/
 
 /*	CHECKBOX LABEL DESIGN
@@ -398,3 +433,19 @@ p{text-align: justify;}
   transform: rotate(45deg);
 }
 /* CHECKBOX LABEL DESIGN END*/
+
+
+/* EDIT SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--default-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--default-item);
+    border-radius: 13px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
