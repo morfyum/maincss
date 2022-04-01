@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>maincss</title>
+	<title>morfin</title>
 	<meta
 	    name="description"
 	    content="Lightweight, easy, and transparant css framework for
@@ -21,37 +21,36 @@
 </head>
 <body>
 
-	<div class="header-flex">
+	<header class="header-flex">
+		<div class="header-flex-left-content">
 
-		<div class="basebox header-flex-left-content">
-
-			<div class="header-flex-element">
+			<nav class="header-flex-element">
 				Morfyum
-			</div>
+			</nav>
 
 			<a href="models/facestyle/facestyle.html">
-				<div class="header-flex-element">
+				<nav class="header-flex-element">
 					Facestyle
-				</div>
+				</nav>
 			</a>
 
-			<div class="header-flex-element">
+			<div onclick="headerDropdown()" class="header-flex-element">
 				Menu
-					<div class="header-flex-dropdown">
+					<div id="headerDropdown" class="header-flex-dropdown">
 
 						<div class="dropdown-background">
 
-							<div class="header-flex-element">
+							<nav class="header-flex-element">
 								Menu 1
-							</div>
+							</nav>
 
-							<div class="header-flex-element">
+							<nav class="header-flex-element">
 								Menu 2
-							</div>
+							</nav>
 
-							<div class="header-flex-element">
+							<nav class="header-flex-element">
 								Menu 3
-							</div>
+							</nav>
 
 						</div>
 
@@ -61,60 +60,53 @@
 			</div>
 
 			<a href="./flex.html">
-			<div class="header-flex-element">
+			<nav class="header-flex-element">
 				Flex
-			</div>
+			</nav>
 			</a>
 
-			<div class="header-flex-element">
+			<nav class="header-flex-element">
 				Button 3
-			</div>
+			</nav>
 
-			<div class="header-flex-element">
+			<nav class="header-flex-element">
 				Button 4
-			</div>
+			</nav>
 
 
-			<div class="basebox header-flex-right-content">
+			<div class="header-flex-right-content">
 
 				<div class="header-flex-element theme-button thb-light" onclick="setTheme('light')">
 						Light
 				</div>
-
 				<div class="header-flex-element theme-button thb-dark" onclick="setTheme('dark')">
 						Dark
 				</div>
 
-				<div class="header-flex-element">
+				<div onclick="settingsBar()" class="header-flex-element">
 					☰
-					<div class="header-flex-dropdown">
-						<div class="dropdown-background basebox">
+					<div id="settingsBar" class="header-flex-dropdown">
+						<div class="dropdown-background">
 
-							<div class="header-flex-element basebox">
+							<nav class="header-flex-element basebox">
 								Right menu Button 1
-							</div>
+							</nav>
 
-							<div class="header-flex-element basebox">
+							<nav class="header-flex-element basebox">
 								Right menu Button 2
-							</div>
+							</nav>
 
 						</div>
 					</div>
 
 				</div>
 
+
 			</div>
 
 
-
 		</div>
-
-
-
-
-
-
-	</div>
+	</header>
 
 	<!--header>
 		<div class="topnav" id="myTopnav">
@@ -157,7 +149,6 @@
 		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 		<strong>Popup</strong><br>
 
-
 	<div class="basebox row testbox">
 	</div>
 
@@ -197,11 +188,11 @@
 	<!--div class="basebox">
 		<img src="02.jpg" alt="Background of index landing: Lake with mountains">
 	</div-->
+
 </div>
 
 <div class="basebox row center margin">
 	<h1>Árvíztűrő tükörfúrógép</h1>
-	<h1>Öt szép szűzlány őrült írót nyúz</h1>
 </div>
 
 
@@ -371,7 +362,7 @@
 
 
 <div class="basebox margin center">
-	<h2>Three baseboxes beside each other</h2>
+	<h2>Three &#60;baseboxes&#62; beside each other</h2>
 	<div class="basebox margin-soft center padding" style="background-color:purple">basebox</div>
 	<div class="basebox margin-soft center padding" style="background-color:purple">basebox</div>
 	<div class="basebox margin-soft center padding" style="background-color:purple">basebox</div>
@@ -379,7 +370,7 @@
 
 <div class="basebox margin">
 	<div class="basebox col margin center padding">
-		<h2>Probably responsive col class: 1-6 column</h2>
+		<h2>Responsive &#60;col&#62; classes: 1-6</h2>
 	</div>
 
 	<div class="testbox col-1 margin-soft padding center ">
@@ -493,7 +484,7 @@
 
 <div class="basebox margin center" style="">
 	<div class="fixbox margin center">
-		<div class="basebox col margin center"><h2>Cards, from "extras.css", because fancy</h2></div>
+		<div class="basebox col margin center"><h2>Cards from <strong>extras.css</strong></h2></div>
 		<div class=" center card" style="">
 			Card<hr>
 			<a href="01.jpg">
@@ -520,8 +511,9 @@
 </div>
 
 <div class="basebox margin center padding">
-   <h2>Expandable <strong>&#160;&#60;footer&#62;&#160;</strong> with col-6 divs</h2>
+   <h2>Expandable &#160;&#60;footer&#62;&#160; in col-6 divs</h2>
 </div>
+
 
 <footer class="basebox center">
 
@@ -543,38 +535,39 @@
 
 	<div class="basebox col-6">
 		<hr><div class="basebox col center">USEFUL TOOLS</div><hr>
-		<div class="basebox col center padding"><a href="https://www.whatsmyip.org/html-characters/" target="blank_10">Special Characters</a></div>
-		<div class="basebox col center padding"><a href="https://www.pexels.com/" target="blank_10">Free Pictures from Pexels</a></div>
-		<div class="basebox col center padding"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="blank_10">css-tricks Flexbox</a></div>
-		<div class="basebox col center padding"><a href="https://web.dev/measure/" target="blank_11">Website Performs</a></div>
+		<div class="basebox col center padding"><a href="https://www.whatsmyip.org/html-characters/" target="blank_10">Special Characters [ ➚ ]</a></div>
+		<div class="basebox col center padding"><a href="https://www.pexels.com/" target="blank_10">Free Pictures from Pexels [ ➚ ]</a></div>
+		<div class="basebox col center padding"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="blank_10">css-tricks Flexbox [ ➚ ]</a></div>
+		<div class="basebox col center padding"><a href="https://web.dev/measure/" target="blank_11">Website Performs [ ➚ ]</a></div>
 	</div>
 
 </footer>
-
 
 </body>
 </html>
 
 
 <script>
-
 	/* Dark / Light theme switcher */
 	const setTheme = theme => document.documentElement.className = theme;
-
 </script>
 
 <script>
 
-	/* When the user clicks on the button,
+ 	/* When the user clicks on the button,
 	toggle between hiding and showing the dropdown content */
-	function myFunction() {
-	  document.getElementById("myDropdown").classList.toggle("show");
+	function headerDropdown() {
+		document.getElementById("headerDropdown").classList.toggle("show");
 	}
 
-// Close the dropdown if the user clicks outside of it
+	function settingsBar() {
+		document.getElementById("settingsBar").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
 	window.onclick = function(event) {
-		if (!event.target.matches('.dropbtn')) {
-		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		if (!event.target.matches('.header-flex-element')) {
+		    var dropdowns = document.getElementsByClassName("header-flex-dropdown");
 		    var i;
 		    for (i = 0; i < dropdowns.length; i++) {
 				var openDropdown = dropdowns[i];
@@ -584,4 +577,5 @@
 		    }
 		}
 	}
+
 </script>

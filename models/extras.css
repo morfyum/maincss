@@ -25,7 +25,7 @@
   height: 60px;
 
   margin: 10px;
-  border-radius: 1rem;
+  border-radius: var(--default-border-radius); /* 1rem before*/
   padding: 0.5rem;
   /*box-shadow: 0px 0px 7px 1px;*/
   /*box-shadow: 0px 0px 7px var(--default-item);*/
@@ -40,7 +40,7 @@
   height: 115px;
 
   margin: 7px;
-  border-radius: 0.5rem;
+  border-radius: var(--default-border-radius);
   padding: 0.5rem;
   /* box-shadow: 0px 0px 7px 1px #000;*/
   color: var(--default-font);
@@ -116,7 +116,7 @@
   margin: 30px 25px 30px 25px;
   padding: 0.5rem;
 
-  border-radius: 3px;
+  border-radius: var(--default-border-radius);
   transition: 0.75s;
   box-shadow: 0px 0px 7px var(--default-item);
   background-color: var(--default-background);
@@ -171,20 +171,20 @@ CODE EXAMPLE:
 
 */
 .red{
-  background-color: rgba(255, 0, 0, 1) !important;
+  background-color: var(--default-red) !important;
 }
 .orange{
-  background-color: rgba(255, 165, 0, 1) !important;
+  background-color: var(--default-orange) !important;
 }
 .green{
-  background-color: rgba(40, 200, 40, 1) !important;
+  background-color: var(--default-green) !important;
 }
 
 .alert {
   width: 100%;
   margin: 0.25rem;
   padding: 20px;
-  border-radius: 13px;
+  border-radius: var(--default-border-radius);
   background-color: var(--default-item);
   color: var(--default-font)
 }
@@ -208,12 +208,12 @@ CODE EXAMPLE:
     position: fixed;
     left: 0;
     right: 0;
-    top: 35px;
+    top: 0px; /*35px*/
     bottom: 0;
 
     margin: 0.5rem 10rem 0.5rem 10rem;
 
-    border-radius: 13px;
+    border-radius: var(--default-border-radius);
 
     /*
     flex-direction: column;
@@ -242,23 +242,34 @@ CODE EXAMPLE:
 /* NEW FLEXBOX HEADER  2022-03-26*/
 
 .header-flex {
-    background-color: var(--default-background);
     display: flex;
     min-height: 40px;
-
-    display: flex;
-
     align-items: stretch;
-
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-color: var(--default-background);
+}
+/* LEFT AND RIGHT CONTENT CONTAINERS */
+.header-flex-left-content{
+    display: flex;
+    align-items: stretch;
     flex-grow: 1;
     flex-wrap: wrap;
-
 }
+.header-flex-right-content{
+    display: flex;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
 
 .header-flex-element{
     display: flex;
 
-    margin: 3px 0px 3px 3px;
+    /* top right bottom left*/
+    margin: 3px 2px 3px 2px;
     padding: 7px 13px 7px 13px;
 
     border-radius: 23px;
@@ -310,7 +321,7 @@ CODE EXAMPLE:
 
 /* MODIFY: .header-flex-dropdwon under
 .header-flex-element:hover */
-.header-flex-element:hover .header-flex-dropdown {
+{
     position: absolute;
     display: flex;
 
@@ -326,24 +337,32 @@ CODE EXAMPLE:
     left: 0;
     right: 0;
     */
-    border-radius: 3px;
+    border-radius: 13px;
 
     padding: 10px;
     background-color: var(--default-background);
     color: var(--default-font);
 }
 
-/* LEFT AND RIGHT CONTENT CONTAINERS */
-.header-flex-left-content{
+.show {
+    position: absolute;
     display: flex;
+
+    min-height: 20px;
     align-items: stretch;
     flex-grow: 1;
     flex-wrap: wrap;
-}
-.header-flex-right-content{
-    display: flex;
-    align-items: stretch;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+
+    right: 0;
+    left: 0;
+    /*
+    top: 36px;
+    left: 0;
+    right: 0;
+    */
+    border-radius: 13px;
+
+    padding: 10px;
+    background-color: var(--default-background);
+    color: var(--default-font);
 }

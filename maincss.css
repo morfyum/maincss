@@ -1,7 +1,5 @@
-/*
-Move all css file into the one "productcss.css" file.
-	find . -name "*.css" -exec cat {} \; > productcss.css.
-*/
+/* Move all css file into the one "productcss.css" file.
+	find . -name "*.css" -exec cat {} \; > productcss.css. */
 
 /* ##### IMPORTED ITEMS ##### */
 /*@import "models/header.css";
@@ -22,7 +20,6 @@ Move all css file into the one "productcss.css" file.
 */
 
 /* ##### GLOBAL VARIABLES ##### */
-
 :root,
 :root.light{
     --default-background: rgba(255, 255, 255, 1);
@@ -37,70 +34,50 @@ Move all css file into the one "productcss.css" file.
 
 }
 
-
-
 :root{
-    /* DEFAULT COLORS */
-    /*
-    --default-background: rgba(255, 255, 255, 1);
-    --default-font: rgba(0, 0, 0, 1);
-    --default-item: rgba(240, 240, 240, 1);
-    */
-  /* LIGHT THEME */
-  /*
-  --light-background: rgba(255, 255, 255, 1);
-  --light-font: rgba(0, 0, 0, 1);
-  --light-item: rgba(240, 240, 240, 1);
-  */
-  /* DARK THEME */
-  /*
-  --dark-background: rgba(46, 52, 54, 1);
-  --dark-font: rgba(255, 255, 255, 1);
-  --dark-item: rgba(240, 240, 240, 1);
-  */
-  /* MIXED THEME */
-  --font-color-orange: rgba(255, 165, 0, 1) /* ORANGE */
+    /* COLOR DEFINITIONS */
+  --default-orange: rgba(255, 165, 0, 1);
+  --default-red: rgba(255, 0, 0, 1);
+  --default-green: rgba(40, 210, 0, 1);
+
+  /* STYLE DEFINITIONS*/
+  --default-border-radius: 13px;
 }
 
 
 
 /* ##### GLOBAL VARIABLES END ##### */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body{
-  margin: 0px;
-  padding: 0px;
+    margin: 0;
+    padding: 0;
 
-  font-family: system-ui;
-  font-size: 1rem;
+    font-family: system-ui;
+    font-size: 1rem;
 
-  background-color: var(--default-background);
-  color: var(--default-font);
+    background-color: var(--default-background);
+    color: var(--default-font);
 }
 
-   /* A flex utasítások mindig az elem belsejére hatnak, nem magára az elemre.
-   Így például a "flex-direction: row;" utasítás nem a flex elemet rendezi,
-   hanem a benne elhelyezett elemek elrendezését fogja megszabni.*/
 
 .testbox{
-  background-color: orange !important;
+    background-color: var(--default-orange) !important;
 }
 
 /* MAIN CONTAINER CLASSES */
 .basebox{
-  display: flex;
-  min-height: 20px;
-  align-items: stretch;
-  flex-grow: 1;
-  flex-wrap: wrap;
+    display: flex;
+    min-height: 20px;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-wrap: wrap;
 
-  /*align-self: flex-start; /*Felülírja a függőleges kitöltést*/
-  /*flex-basis: auto;*/
-  /*flex-direction: row;*/
-
-
-  /*background-color: rgba(240, 240, 240)*/
+    /*align-self: flex-start; /*Felülírja a függőleges kitöltést*/
+    /*flex-basis: auto;*/
+    /*flex-direction: row;*/
 }
 
 .fixbox{
@@ -117,40 +94,6 @@ body{
   /*box-shadow: 0px 0px 7px 1px var(--default-item);*/
   /*background-color: rgba(54, 54, 54, 1);*/
   /*background-color: var(--default-item)*/
-}
-
-.base-col-2, .base-col-3, .base-col-4, .base-col-5, .base-col-6 {
-  min-height: 25px;
-  align-items: stretch;
-  flex-grow: 1;
-  margin: 0px;
-  padding: 0px;
-  min-width: 25px;
-  /*flex-wrap: wrap;*/
-}
-.base-col-2{
-  width: 50%;
-  flex-grow: 6;
-}
-.base-col-3{
-  width: 33%;
-  flex-grow: 1;
-}
-.base-col-4{
-  width: 25%;
-  flex-grow: 4;
-  padding: 0px !important;
-}
-.base-col-5{
-  width: 20%;
-  flex-grow: 3;
-}
-.base-col-6{
-  width: 16.5%;
-  flex-grow: 2;
-}
-.base-col-6{
-  flex-grow: 1;
 }
 
 /* MAIN CONTAINER CLASSES END*/
@@ -316,7 +259,7 @@ img{
 hr{
   width: 90%;
   height: 0px;
-  border: 1px solid var(--font-color-orange)
+  border: 1px solid var(--default-orange)
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -328,7 +271,7 @@ p{text-align: justify;}
 /* LINK FORMATS */
 	a:link {text-decoration: none; color: var(--default-font);}
 	a:visited {color: var(--default-font);}
-	a:hover {color: var(--font-color-orange);}
+	a:hover {color: var(--default-orange);}
 	a:active {color: var(--default-font);}
 /* LINK FORMATS END*/
 
