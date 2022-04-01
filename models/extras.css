@@ -355,14 +355,8 @@ CODE EXAMPLE:
 
     right: 0;
     left: 0;
-    /*
-    top: 36px;
-    left: 0;
-    right: 0;
-    */
-    border-radius: 13px;
 
-    padding: 10px;
+    padding: 7px;
     background-color: var(--default-background);
     color: var(--default-font);
 }

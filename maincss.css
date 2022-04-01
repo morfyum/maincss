@@ -36,12 +36,26 @@
 
 :root{
     /* COLOR DEFINITIONS */
-  --default-orange: rgba(255, 165, 0, 1);
-  --default-red: rgba(255, 0, 0, 1);
-  --default-green: rgba(40, 210, 0, 1);
+    --default-orange: rgba(255, 165, 0, 1);
+    --default-red: rgba(255, 0, 0, 1);
+    --default-green: rgba(40, 210, 0, 1);
 
-  /* STYLE DEFINITIONS*/
-  --default-border-radius: 13px;
+    /* STYLE DEFINITIONS*/
+    --default-border-radius: 13px;
+    --default-padding: var(--padding) ;
+    --default-margin: var(--margin);
+
+    --border-radius-hard: 27px;
+    --border-radius: 13px;
+    --border-radius-soft: 7px;
+
+    --padding-hard: 1rem;
+    --padding: 0.5rem;
+    --padding-soft: 1px;
+
+    --margin-hard: 1rem;
+    --margin: 0.5rem;
+    --margin-soft: 1px;
 }
 
 
@@ -103,17 +117,17 @@ body{
 
 /* ===== DESIGN ELEMENTS ===== */
 
-	.padding{padding: 0.5rem;}
-	.padding-soft{padding: 1px;}
+.padding{padding: var(--padding)}
+.padding-soft{padding: var(--padding-soft)}
 
-	.margin{margin: 0.5rem;}
-	.margin-soft{margin: 1px;}
+.margin{margin: var(--margin)}
+.margin-soft{margin: var(--margin-soft)}
 
 
-	.text-left{text-align: left;}
-	.text-center{text-align: center; justify-content: center;}
-	.text-justify{text-align: justify;}
-	.text-right{text-align: right;}
+.text-left{text-align: left;}
+.text-center{text-align: center; justify-content: center;}
+.text-justify{text-align: justify;}
+.text-right{text-align: right;}
 
 /* ===== DESIGN ELEMENTS END ===== */
 
@@ -264,6 +278,9 @@ hr{
 
 h1, h2, h3, h4, h5, h6{
   width: 100%;
+  background-color: var(--default-item);
+  padding: var(--padding-hard);
+  border-radius: var(--default-border-radius);
 }
 
 p{text-align: justify;}
@@ -381,15 +398,15 @@ p{text-align: justify;}
 
 /* EDIT SCROLLBAR */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--default-background);
+    background-color: var(--default-background);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--default-item);
+    background: var(--default-item);
     border-radius: 13px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
