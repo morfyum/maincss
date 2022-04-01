@@ -296,6 +296,7 @@ input{
   font-size: 1.25rem;
   outline: none;
   border-radius: 23px;
+  color: var(--default-font);
   background-color: var(--default-item);
   border: 2px solid var(--default-item);
   /*box-shadow: 0px 0px 7px var(--default-item);*/
@@ -315,7 +316,7 @@ img{
 hr{
   width: 90%;
   height: 0px;
-  border: 1px solid var(--font-color-for-all)
+  border: 1px solid var(--font-color-orange)
 }
 
 h1, h2, h3, h4, h5, h6{
