@@ -35,6 +35,8 @@
     right: 0;
     display: flex;
     flex-basis: 100%;
+    gap: 0 0.5rem;
+
     flex-grow: 1;
     min-height: 30px;
     justify-content: flex-end;
@@ -46,6 +48,7 @@
 .header-element {
     display: flex;
     align-items: center; /*Függőlegesen középre a benne lévő contentet*/
+
 
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */

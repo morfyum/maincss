@@ -23,6 +23,8 @@ element.requestFullscreen()
 */
 
 
+
+
 function settingsBar() {
     document.getElementById("mainMenu").classList.toggle("show-game-menu");
 }
@@ -37,6 +39,18 @@ window.onclick = function(event) {
             if (openDropdown.classList.contains('show-game-menu')) {
                 openDropdown.classList.remove('show-game-menu');
             }
+        }
+    }
+}
+
+
+
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
         }
     }
 }

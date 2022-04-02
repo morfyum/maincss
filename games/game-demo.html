@@ -9,7 +9,7 @@
 	    content="Web based game engine demo by morfin MicroCSS framework.
         ">
 
-    <script type="text/javascript" src="./game-demo.js"></script>
+    <script type="text/javascript" src="./game-demo.js" defer></script>
 
     <link rel="stylesheet" type="text/css" href="./game-demo.css">
 
@@ -23,7 +23,7 @@
 </head>
 <body>
 [ GAME ENGINE DEMO ]
-<div class="game-window">
+<div id="gameWindow" class="game-window">
 
     <header class="game-header">
 
@@ -40,6 +40,11 @@
         <nav onclick="settingsBar()" class="header-element">
             ☰
         </nav>
+
+		<div onclick="toggleFullScreen()" class="header-element">
+			⛶
+		</div>
+
 
     </header>
 
@@ -62,3 +67,10 @@
 
 </div>
 </body>
+
+
+<script type="text/javascript">
+
+
+
+</script>
