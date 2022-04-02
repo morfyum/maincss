@@ -183,6 +183,7 @@
 
 .show-game-menu{
     display: flex;
+    z-index: 100;
 }
 
 
