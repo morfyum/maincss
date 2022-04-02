@@ -24,6 +24,10 @@ element.requestFullscreen()
 
 
 
+function gameInventory() {
+    document.getElementById("gameInventory").classList.toggle("show-game-menu");
+    console.log("Game Inventory");
+}
 
 function settingsBar() {
     document.getElementById("mainMenu").classList.toggle("show-game-menu");
@@ -32,7 +36,7 @@ function settingsBar() {
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.header-element')) {
-        var dropdowns = document.getElementsByClassName("maunMenu");
+        var dropdowns = document.getElementsByClassName("main-menu");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
