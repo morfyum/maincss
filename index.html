@@ -18,6 +18,12 @@
 	<link rel="stylesheet" type="text/css" href="models/1280p.css">
 	<link rel="stylesheet" type="text/css" href="models/2160p.css">
 
+	<script>
+		var theme = localStorage.getItem("theme");
+		document.documentElement.className = theme
+	</script>
+
+
 </head>
 <body>
 
@@ -545,8 +551,15 @@
 
 
 <script>
-	/* Dark / Light theme switcher */
-	const setTheme = theme => document.documentElement.className = theme;
+
+	/* Set Theme with buttons */
+	function setTheme(theme) {
+		document.documentElement.className = theme
+		localStorage.setItem("theme", theme);
+		theme = localStorage.getItem("theme");
+	}
+
+
 </script>
 
 <script>
@@ -556,6 +569,7 @@
 	function headerDropdown() {
 		document.getElementById("headerDropdown").classList.toggle("show");
 	}
+
 
 	function settingsBar() {
 		document.getElementById("settingsBar").classList.toggle("show");
