@@ -255,6 +255,7 @@ CODE EXAMPLE:
     align-items: stretch;
     flex-grow: 1;
     flex-wrap: wrap;
+
 }
 .header-flex-right-content{
     display: flex;
@@ -269,6 +270,7 @@ CODE EXAMPLE:
     display: flex;
 
     /* top right bottom left*/
+    
     margin: 3px 2px 3px 2px;
     padding: 7px 13px 7px 13px;
 
@@ -321,7 +323,8 @@ CODE EXAMPLE:
 
 /* MODIFY: .header-flex-dropdwon under
 .header-flex-element:hover */
-{
+/*
+.header-flex-element:hover .header-flex-dropdown {
     position: absolute;
     display: flex;
 
@@ -332,17 +335,14 @@ CODE EXAMPLE:
 
     right: 0;
     left: 0;
-    /*
-    top: 36px;
-    left: 0;
-    right: 0;
-    */
+
     border-radius: 13px;
 
     padding: 10px;
     background-color: var(--default-background);
     color: var(--default-font);
 }
+*/
 
 .show {
     position: absolute;

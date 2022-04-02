@@ -51,11 +51,11 @@
 
     --padding-hard: 1rem;
     --padding: 0.5rem;
-    --padding-soft: 1px;
+    --padding-soft: 3px;
 
     --margin-hard: 1rem;
     --margin: 0.5rem;
-    --margin-soft: 1px;
+    --margin-soft: 3px;
 }
 
 
@@ -270,20 +270,21 @@ img{
   background-size: cover;
 }
 
-hr{
-  width: 90%;
-  height: 0px;
-  border: 1px solid var(--default-orange)
+hr {
+    display: block;
+    width: 90%;
+    border: 1px solid var(--default-orange);
+    height: 0px;
 }
 
-h1, h2, h3, h4, h5, h6{
-  width: 100%;
-  background-color: var(--default-item);
-  padding: var(--padding-hard);
-  border-radius: var(--default-border-radius);
+h1, h2, h3, h4, h5, h6 {
+    width: 100%;
+    background-color: var(--default-item);
+    padding: var(--padding-hard);
+    border-radius: var(--default-border-radius);
 }
 
-p{text-align: justify;}
+p {text-align: justify;}
 
 /* LINK FORMATS */
 	a:link {text-decoration: none; color: var(--default-font);}
