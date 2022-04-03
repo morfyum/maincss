@@ -126,15 +126,13 @@
     top: 0;
     bottom: 0;
 
+    overflow: auto;
+
     margin: 50px 10px 55px 10px;
     padding: 10px;
-
-    border-radius: var(--default-border-radius);
     align-items: center;
     justify-content: center;
 
-
-    overflow: auto;
 
     /*
     flex-direction: column;
@@ -149,6 +147,7 @@
     flex-wrap: wrap;
 
 
+    border-radius: var(--default-border-radius);
     color: var(--default-font);
     background-color: rgba(90, 40, 0, 1);
 }
@@ -197,7 +196,7 @@
     .main-menu {
         margin: 3rem 0rem 0rem 0rem;
         width: auto;
-            margin: 80px auto 3px auto;
+        margin: 80px auto 3px auto;
     }
 
     .game-header {
@@ -212,7 +211,7 @@
         font-size: 2rem;
     }
 
-    .inventory-slow {
+    .inventory-slot {
         width: 3.5rem;
         height: 3.5rem;
     }
