@@ -112,7 +112,7 @@
     justify-content: center;
     flex-basis: 100%;
     flex-grow: 1;
-    height: 30px;
+    min-height: 30px;
     gap: 0 0.5rem;
 
     padding: var(--padding);
