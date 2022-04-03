@@ -79,7 +79,7 @@
     overflow: auto;
 
     width: 600px;
-    margin: 50px auto 55px auto;
+    margin: 3px auto 3px auto;
 
     border-radius: var(--default-border-radius);
 
@@ -109,9 +109,11 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-basis: 100%;
     flex-grow: 1;
     height: 30px;
+    gap: 0 0.5rem;
 
     padding: var(--padding);
     border-radius: var(--default-border-radius);
@@ -131,7 +133,7 @@
 
     overflow: auto;
 
-    margin: 50px 10px 55px 10px;
+    margin: 40px 10px 50px 10px;
     padding: 10px;
     align-items: center;
     justify-content: center;
