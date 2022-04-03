@@ -115,7 +115,7 @@
     min-height: 30px;
     gap: 0 0.5rem;
 
-    padding: var(--padding);
+    padding: var(--padding-soft);
     border-radius: var(--default-border-radius);
     margin: var(--margin-soft);
     bottom: 0;
