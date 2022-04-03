@@ -44,11 +44,12 @@
     padding: var(--padding-soft);
     color: var(--default-orange);
     background-color: var(--default-background);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
 }
 .header-element {
     display: flex;
     align-items: center; /*Függőlegesen középre a benne lévő contentet*/
+
 
 
     -webkit-user-select: none; /* Safari */
@@ -57,7 +58,9 @@
     user-select: none; /* Standard */
 
     padding: var(--padding);
-    border-radius: var(--default-border-radius)
+    border-radius: 23px;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 .header-element:hover {
     display: flex;
