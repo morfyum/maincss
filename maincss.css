@@ -102,7 +102,8 @@ body{
 
 .horizontal-scroll {
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
     min-height: 20px;
     align-items: stretch;
     padding: var(--padding);
