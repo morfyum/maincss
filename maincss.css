@@ -21,32 +21,29 @@
 
 /* ##### GLOBAL VARIABLES ##### */
 :root,
-:root.light{
+:root.light {
     --default-background: rgba(255, 255, 255, 1);
     --default-font: rgba(0, 0, 0, 1);
     --default-item: rgba(230, 230, 230, 1);
-
 }
-:root.dark{
+:root.dark {
     --default-background: rgba(46, 52, 54, 1);
     --default-font: rgba(255, 255, 255, 1);
     --default-item: rgba(30, 30, 30, 1);
-
 }
-
-:root{
+:root {
     /* COLOR DEFINITIONS */
     --default-orange: rgba(255, 165, 0, 1);
     --default-red: rgba(255, 0, 0, 1);
     --default-green: rgba(40, 210, 0, 1);
 
     /* STYLE DEFINITIONS*/
-    --default-border-radius: 13px;
+    --default-border-radius: var(--border-radius);
     --default-padding: var(--padding) ;
     --default-margin: var(--margin);
 
     --border-radius-hard: 27px;
-    --border-radius: 13px;
+    --border-radius:13px;
     --border-radius-soft: 7px;
 
     --padding-hard: 1rem;
@@ -58,9 +55,8 @@
     --margin-soft: 3px;
 }
 
+/***  GLOBAL VARIABLES END  ***/
 
-
-/* ##### GLOBAL VARIABLES END ##### */
 html {
     scroll-behavior: smooth;
 }
@@ -76,22 +72,43 @@ body{
     color: var(--default-font);
 }
 
-
 .testbox{
     background-color: var(--default-orange) !important;
 }
 
 /* MAIN CONTAINER CLASSES */
-.basebox{
+.basebox {
     display: flex;
+    flex-grow: 1;
     min-height: 20px;
     align-items: stretch;
-    flex-grow: 1;
     flex-wrap: wrap;
+
+    max-width: 100%;
 
     /*align-self: flex-start; /*Felülírja a függőleges kitöltést*/
     /*flex-basis: auto;*/
     /*flex-direction: row;*/
+}
+
+.gap {
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.vertical-scroll {
+    overflow: scroll;
+}
+
+.horizontal-scroll {
+    display: flex;
+    overflow: scroll;
+    min-height: 20px;
+    align-items: stretch;
+    padding: var(--padding);
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    transition: transitionZ(-10px);
 }
 
 .fixbox{
@@ -115,25 +132,37 @@ body{
 /* Display: none in 768p.css */
 .hide-on-mobile{}
 
-/* ===== DESIGN ELEMENTS ===== */
+/* *** DESIGN ELEMENTS *** */
 
-.padding{padding: var(--padding)}
-.padding-soft{padding: var(--padding-soft)}
+.bg1 { background-color: var(--default-background); }
+.fg1 { background-color: var(--default-item); }
+
+.padding { padding: var(--padding) }
+.padding-soft { padding: var(--padding-soft) }
+.padding-hard { padding: var(--padding-hard) }
 
 .margin{margin: var(--margin)}
 .margin-soft{margin: var(--margin-soft)}
-
+.margin-hard{margin: var(--margin-hard)}
 
 .text-left{text-align: left;}
 .text-center{text-align: center; justify-content: center;}
 .text-justify{text-align: justify;}
 .text-right{text-align: right;}
 
-/* ===== DESIGN ELEMENTS END ===== */
+.border-radius { border-radius: var(--border-radius) }
+.border-radius-soft { border-radius: var(--border-radius-soft) }
+.border-radius-hard { border-radius: var(--border-radius-hard) }
 
-.item-left{}
-.item-center{}
-.item-right{}
+.br {border-radius: var(--border-radius)}
+.br-soft {border-radius: var(--border-radius-soft)}
+.br-hard {border-radius: var(--border-radius-hard)}
+
+/* *** DESIGN ELEMENTS END *** */
+
+.item-top {align-items: flex-start }
+.item-center{align-items: center}
+.item-bottom{ align-items: flex-end}
 
 .center{
   text-align: center;
@@ -207,18 +236,18 @@ body{
 
 /* BUTTON */
 .button{
-  height: 15px;
+    min-height: 15px;
 
-  padding: 1rem;
-  text-align: center;
-  border-radius: 0.2rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.2rem;
 
-  margin: 7px;
-  /*box-shadow: 0px 0px 1px 1px;*/
-  /*border: 1px solid #ccc;*/
+    /*margin: 7px;*/
 
-    box-shadow: 0px 0px 7px var(--default-item);
-  background-color: var(--default-background);
+    /*box-shadow: 0px 0px 1px 1px;*/
+    /*border: 1px solid #ccc;*/
+    /*box-shadow: 0px 0px 7px var(--default-item);*/
+    /*background-color: var(--default-background);*/
 }
 .button:hover{
     cursor: -webkit-grab;
@@ -241,7 +270,7 @@ footer{
   padding: 1rem;
   /*color: var(--font-color-for-dark);*/
   color: var(--default-font);
-  background-color: var(--default-item);
+  background-color: var(--default-background);
 }
 
 fieldset{ border: 1px solid;}
@@ -279,9 +308,9 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
     width: 100%;
-    background-color: var(--default-item);
+    /*background-color: var(--default-item);*/
     padding: var(--padding-hard);
-    border-radius: var(--default-border-radius);
+    /*border-radius: var(--default-border-radius);*/
 }
 
 p {text-align: justify;}
@@ -411,3 +440,4 @@ p {text-align: justify;}
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
