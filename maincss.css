@@ -430,6 +430,7 @@ p {text-align: justify;}
 /* EDIT SCROLLBAR */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 7px;
 }
 ::-webkit-scrollbar-track {
     background-color: var(--default-background);
