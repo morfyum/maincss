@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>morfin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morfin</title>
 	<meta
 	    name="description"
 	    content="Lightweight, easy, and transparant css framework for
@@ -23,8 +23,8 @@
 		document.documentElement.className = theme
 	</script>
 
-
 </head>
+
 <body>
 
 	<header class="header-flex">
@@ -48,7 +48,7 @@
 			</a>
 
 			<div onclick="headerDropdown()" class="header-flex-element">
-				[ Menu ]
+				[ Templates ]
 					<div id="headerDropdown" class="header-flex-dropdown">
 
 						<div class="dropdown-background">
@@ -159,23 +159,40 @@
 
 
 <div class="basebox center img-background-index" >
-	<div class="basebox col center">
+	<div class="basebox row center">
 		<div class="basebox over-title">
-			<h2 class="text-left margin">Favourites</h2>
+			<h2 class="text-left fg1 border-radius">Horizontal scrollbar</h2>
 		</div>
 	</div>
-	<div class="basebox over-title center margin">
+
+	<div class="basebox over-title center">
+	<div class="horizontal-scroll">
+		<div class="full-center top-box-link" id="tbl_first"><a href="#tbl_last">👉</a></div>
 		<div class="center top-box-link"></div>
 		<div class="center top-box-link"></div>
 		<div class="center top-box-link"></div>
 		<div class="center top-box-link"></div>
 		<div class="center top-box-link"></div>
 		<div class="center top-box-link"></div>
+		<div class="center top-box-link"></div>
+		<div class="center top-box-link"></div>
+		<div class="full-center top-box-link">Left</div>
+		<div class="full-center top-box-link">Right</div>
+		<div class="center top-box-link"></div>
+		<div class="center top-box-link"></div>
+		<div class="center top-box-link"></div>
+		<div class="center top-box-link"></div>
+		<div class="center top-box-link"></div>
+		<div class="center top-box-link"></div>
+		<div class="center top-box-link"></div>
+		<div class="center top-box-link"></div>
+		<div class="full-center top-box-link" id="tbl_last"><a href="#tbl_first">👈</a></div>
+	</div>
 	</div>
 
-	<div class="basebox col center">
+	<div class="basebox row center">
 		<div class="basebox over-title">
-			<h2 class="text-left margin">Other</h2>
+			<h2 class="text-left fg1 br">Other</h2>
 		</div>
 	</div>
 
@@ -267,7 +284,7 @@
 </div>
 
 <div class="basebox center margin padding">
-	<h2>&#60;3 Preconfigured form, and button elements, to be an Amazing login session &#60;3</h2>
+	<h2>&#60;3 🧡 Preconfigured form, and button elements, to be an Amazing login session &#60;3</h2>
 </div>
 
 <div class="basebox center margin padding">
@@ -294,7 +311,7 @@
 			</label>
 
 			<label for="tooloong" class="checkbox-label margin">
-				Toooo loooooong teeeeext
+				Reallyyyyyyyyyyyyyyyy looooooooong teeeeeeeeeeext
 				<input id="tooloong" type="checkbox">
 				<span class="checkmark"></span>
 			</label>
@@ -356,16 +373,19 @@
 			</label>
 		</div>
 
-
 		<hr>
-		<div class="button col">Button</div>
+		<div class="basebox row padding gap">
+			<div class="basebox button center">Button1</div>
+			<div class="basebox button center">Button2</div>
+		</div>
+
 	</form>
 
 </div>
 
 
 <div class="basebox margin center">
-	<h2>Three &#60;baseboxes&#62; beside each other</h2>
+	<h2>Three or any <i>&#60;div class="basebox"&#62;</i> beside each other</h2>
 	<div class="basebox margin-soft center padding testbox" >basebox</div>
 	<div class="basebox margin-soft center padding testbox" >basebox</div>
 	<div class="basebox margin-soft center padding testbox" >basebox</div>
@@ -373,13 +393,12 @@
 
 <div class="basebox margin">
 	<div class="basebox col margin center padding">
-		<h2>Responsive &#60;col&#62; classes: 1-6</h2>
+		<h2>Responsive numbered columns <i>&#60;div class="col-X"&#62;</i> (1-6)</h2>
 	</div>
 
 	<div class="testbox col-1 margin-soft padding center ">
    		COL-1
 	</div>
-
 	<div class="testbox col-2 margin-soft padding center">
 	   COL-2
 	</div>
@@ -551,25 +570,20 @@
 
 
 <script>
-
 	/* Set Theme with buttons */
 	function setTheme(theme) {
 		document.documentElement.className = theme
 		localStorage.setItem("theme", theme);
 		theme = localStorage.getItem("theme");
 	}
-
-
 </script>
 
 <script>
-
  	/* When the user clicks on the button,
 	toggle between hiding and showing the dropdown content */
 	function headerDropdown() {
 		document.getElementById("headerDropdown").classList.toggle("show");
 	}
-
 
 	function settingsBar() {
 		document.getElementById("settingsBar").classList.toggle("show");
@@ -588,5 +602,4 @@
 		    }
 		}
 	}
-
 </script>
