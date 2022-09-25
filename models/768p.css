@@ -1,7 +1,11 @@
-@media screen and (max-width: 768px) {
-/* For Small screen devices.
+@media screen and (max-width: 810px) {
+/* For Small screen devices. // ORINIGN: 768px
 This is the most smaller screen in phone family */
 
+
+    .header-flex-left-content {
+        justify-content: space-around;
+    }
 
 	/* MAINCSS.CSS */
 
@@ -25,7 +29,7 @@ This is the most smaller screen in phone family */
 		min-width: auto;
 	}
 	.col-3{
-		width: 100%;
+		/*width: 100%;*/
 		min-width: auto;
 	}
 	.col-4{
@@ -91,4 +95,9 @@ This is the most smaller screen in phone family */
 		display: none
 	}
 
+
+    .over-title{
+        max-width:100%;
+    }
 }
+
