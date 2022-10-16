@@ -98,7 +98,6 @@
 							<nav class="header-flex-element basebox">
 								Right menu Button 2
 							</nav>
-
 						</div>
 					</div>
 
@@ -107,61 +106,15 @@
 
 			</div>
 
-
 		</div>
 	</header>
 
-	<!--header>
-		<div class="topnav" id="myTopnav">
-		    <a href="#mainpage" class="active">INDEX.html</a>
-		    <a href="#">Bolt</a>
-		    <a href="#blog">Blog</a>
-		    <a href="#it-services">IT Services</a>
-		    <div class="dropdown">
-		        <div class="dropbtn">Egyéb
-		            <i class="fa fa-caret-down"></i>
-		        </div>
-		        <div class="dropdown-content">
-		            <a href="#">Link 1</a>
-		            <a href="#">Link 2</a>
-		            <a href="#">Link 3</a>
-		        </div>
-		    </div>
-		    <a href="{% url 'about' %}">About</a>
-		    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-
-		    <a href="#login" class="rightnav">Login</a>
-		    <a href="#regist" class="rightnav">Regist</a>
-		</div>
-
-		<script>
-		    function myFunction() {
-		        var x = document.getElementById("myTopnav");
-		        if (x.className === "topnav") {
-		            x.className += " responsive";
-		        } else {
-		            x.className = "topnav";
-		        }
-		    }
-		</script>
-
-	</header-->
-
-
-<!--div class="popup">
-		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-		<strong>Popup</strong><br>
-
-	<div class="basebox row testbox">
-	</div>
-
-</div-->
 
 
 <div class="basebox center img-background-index" >
 	<div class="basebox row center">
 		<div class="basebox over-title">
-			<h2 class="text-left fg1 border-radius">Horizontal scrollbar</h2>
+			<h2 class="text-left fg1 border-radius">Welcome!</h2>
 		</div>
 	</div>
 
@@ -269,15 +222,15 @@
 	</div>
 	<div class="alert red">
 		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-		THIS IS RED ALERT
+		ERROR ALERT
 	</div>
 	<div class="alert orange">
 		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-		THIS IS ORANGE ALERT
+		WARNING ALERT
 	</div>
 	<div class="alert green">
 		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-		AND THIS IS A SUCCES GREEN
+		SUCCESS ALERT
 	</div>
 
 
@@ -290,14 +243,51 @@
 <div class="basebox center margin padding">
 
 	<form class="fixbox">
+
 		<div class="basebox col center padding">USERNAME:</div>
 		<div class="basebox col center"><input type="text" placeholder="Username"></div>
 
 		<div class="basebox col center padding">PASSWORD:</div>
 		<div class="basebox col center"><input type="password" placeholder="password"></div>
 
-		<div class="basebox margin-soft center padding">
 
+		<div class="col-2 margin-soft">
+			<label for="any" class="checkbox-label margin row">
+				Any
+				<input id="any" type="checkbox" checked="checked">
+				<span class="checkmark"></span>
+			</label>
+			<label for="two" class="checkbox-label margin row">
+				Two
+				<input id="two" type="checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label for="tooloong" class="checkbox-label margin row">
+				Reallyyyyyyyyyyyyyyyy looooooooong teeeeeeeeeeext
+				<input id="tooloong" type="checkbox">
+				<span class="checkmark"></span>
+			</label>
+		</div>
+
+		<div class="col-2 margin-soft">
+			<label for="checkbox2" class="checkbox-label margin row">
+				Checkbox 2
+				<input id="checkbox2" type="checkbox" checked="checked">
+				<span class="checkmark"></span>
+			</label>
+			<label for="two2" class="checkbox-label margin row">
+				Two 2
+				<input id="two2" type="checkbox">
+				<span class="checkmark"></span>
+			</label>
+			<label for="other2" class="checkbox-label margin row">
+				Other
+				<input id="other2" type="checkbox">
+				<span class="checkmark"></span>
+			</label>
+		</div>
+
+		<!--div class="basebox row margin-soft center padding testbox">
 			<label for="any" class="checkbox-label margin">
 				Any
 				<input id="any" type="checkbox" checked="checked">
@@ -315,9 +305,10 @@
 				<input id="tooloong" type="checkbox">
 				<span class="checkmark"></span>
 			</label>
+		</div-->
 
-		</div>
-		<div class="basebox margin-soft center padding">
+
+		<!--div class="basebox margin-soft center padding testbox row">
 			<label for="checkbox2" class="checkbox-label margin">
 				Checkbox 2
 				<input id="checkbox2" type="checkbox" checked="checked">
@@ -333,11 +324,11 @@
 				<input id="other2" type="checkbox">
 				<span class="checkmark"></span>
 			</label>
-		</div>
+		</div-->
 
 
 
-		<div class="basebox margin-soft center padding">
+		<div class="basebox row margin-soft center padding">
 			<label for="radiobutt01" class="checkbox-label margin">
 				Radio button 1/1
 				<input id="radiobutt01" type="radio" checked="checked" name="test01">
@@ -355,7 +346,7 @@
 			</label>
 		</div>
 
-		<div class="basebox margin-soft center padding">
+		<div class="basebox row margin-soft center padding">
 			<label for="radiobutt03" class="checkbox-label margin">
 				Radio button 2/1
 				<input id="radiobutt03" type="radio" checked="checked" name="test02">
@@ -375,8 +366,8 @@
 
 		<hr>
 		<div class="basebox row padding gap">
-			<div class="basebox button center">Button1</div>
-			<div class="basebox button center">Button2</div>
+			<div class="basebox button center">Button 1</div>
+			<div class="basebox button center">Button 2</div>
 		</div>
 
 	</form>
@@ -504,31 +495,31 @@
 </div>
 
 
-<div class="basebox margin center" style="">
+<div class="basebox margin center">
 	<div class="fixbox margin center">
 		<div class="basebox col margin center"><h2>Cards from <strong>extras.css</strong></h2></div>
-		<div class=" center card" style="">
+		<div class=" center card">
 			Card<hr>
 			<a href="01.jpg">
 				<img src="01.jpg" alt="Basebox example: morfyum">
 			</a>
 		</div>
-		<div class=" center card" style="">
+		<div class=" center card">
 			Card<hr>
 			<a href="02.jpg">
 				<img src="02.jpg" alt="Basebox example: Lake with mountains">
 			</a>
 		</div>
-		<div class=" center card" style="">Card<hr><a href="03.jpg"><img src="03.jpg" alt="Basebox example: stay-at-home css"></a></div>
-		<div class=" center card" style="">Card</div>
-		<div class=" center card" style="">Card</div>
-		<div class=" center card" style="">Card</div>
-		<div class=" center card" style="">Card</div>
-		<div class=" center card" style="">Card</div>
-		<div class=" center card" style="">Card</div>
-		<div class=" center card" style="">Card</div>
-		<div class=" center card" style="">Card</div>
-		<div class=" center card" style="">Card</div>
+		<div class=" center card">Card<hr><a href="03.jpg"><img src="03.jpg" alt="Basebox example: stay-at-home css"></a></div>
+		<div class=" center card">Card</div>
+		<div class=" center card">Card</div>
+		<div class=" center card">Card</div>
+		<div class=" center card">Card</div>
+		<div class=" center card">Card</div>
+		<div class=" center card">Card</div>
+		<div class=" center card">Card</div>
+		<div class=" center card">Card</div>
+		<div class=" center card">Card</div>
 	</div>
 </div>
 
@@ -560,7 +551,7 @@
 		<div class="basebox col center padding"><a href="https://www.whatsmyip.org/html-characters/" target="blank_10">Special Characters [ ➚ ]</a></div>
 		<div class="basebox col center padding"><a href="https://www.pexels.com/" target="blank_10">Free Pictures from Pexels [ ➚ ]</a></div>
 		<div class="basebox col center padding"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="blank_10">css-tricks Flexbox [ ➚ ]</a></div>
-		<div class="basebox col center padding"><a href="https://web.dev/measure/" target="blank_11">Website Performs [ ➚ ]</a></div>
+		<div class="basebox col center padding"><a href="https://web.dev/measure/" target="blank_11">Measure Page Quality [ ➚ ]</a></div>
 	</div>
 
 </footer>
@@ -579,6 +570,12 @@
 </script>
 
 <script>
+
+	function jumpToId(element_id) {
+		const element = document.getElementById(element_id);
+		element.scrollIntoView();
+	}
+
  	/* When the user clicks on the button,
 	toggle between hiding and showing the dropdown content */
 	function headerDropdown() {
