@@ -29,7 +29,7 @@ find ./ -name "*.css" -exec cat {} \; > productcss.css
 ✅ stable | 🚧 Not recommended to use | ✨ new | 🧪 changed/testing
 
 ```
-## TEST
+## TESTER
     .testbox                : ✅ Orange highlighting
 
 ## FUNCTIONALITY
