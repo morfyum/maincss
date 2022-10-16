@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>morfin</title>
+	<title>App Index</title>
 	<meta
 	    name="description"
 	    content="Lightweight, easy, and transparant css framework for
@@ -27,69 +27,52 @@
 
 </head>
 <body>
+<div class="basebox app-main">
 
-<div class="app-container">
-
-	<div class="basebox t1 vertical-scroll">
-		<nav class="app-button">1</nav>
-		<nav class="app-button">2</nav>
-		<nav class="app-button">3</nav>
-		<nav class="app-button">4</nav>
-		<nav class="app-button">5</nav>
-		<nav class="app-button">6</nav>
-		<nav class="app-button">7</nav>
-		<nav class="app-button">8</nav>
-		<nav class="app-button">9</nav>
-		<nav class="app-button">10</nav>
-		<nav class="app-button">11</nav>
-		<nav class="app-button">12</nav>
-		<nav class="app-button">13</nav>
-		<nav class="app-button">14</nav>
-		<nav class="app-button">15</nav>
+	<div class="basebox row app-header">
+		<div class="t4-element">App Header</div>
+		<div class="t4-element theme-button thb-light" onclick="setTheme('light')">Light</div>
+		<div class="t4-element theme-button thb-dark" onclick="setTheme('dark')">Dark</div>
+		<div class="t4-element"><a href="../../index.html">Morfyum</a></div>
 	</div>
 
-	<div class="app-main">
 
-		<div class="app-top-bar">
-			<header class="header-flex">
+	<div class="basebox row app-body">
 
-			</header>
+		<div class="app-scroll">
+		    <div class="basebox app-scroll vertical-scroll full-center">
+	        	<nav class="app-button"> A1 </nav>
+				<nav class="app-button"> B2 </nav>
+				<nav class="app-button"> C3 </nav>
+			</div>
 		</div>
 
-		<div class="app-content">
-			Content
+		<div class="basebox app-files">
+			<div class="basebox app-files vertical-scroll">
+				<nav class="app-entry row">Entry 1</nav>
+				<nav class="app-entry row">Entry 2</nav>
+				<nav class="app-entry row">Entry 3</nav>
+				<nav class="app-entry row">Entry 4</nav>
+				<nav class="app-entry row">Entry 5</nav>
+				<nav class="app-entry row">Entry 6</nav>
+				<nav class="app-entry row">Entry 7</nav>
+				<nav class="app-entry row">Entry 8</nav>
+				<nav class="app-entry row">Entry 9</nav>
+
+			</div>
+		</div>
+
+		<div class="basebox app-workspace">
+			<textarea autofocus wrap="off" class="app-editor">#!/bin/bash</textarea>
 		</div>
 
 	</div>
 
-</div>
 
-<div class="app-footer">
-
-	<div class="footer-item">Item 1</div>
-	<div class="footer-item">Item 2</div>
-	<div class="footer-item">Item 3</div>
-
-</div>
-
-<!--div class="basebox app-main">
-
-	<div class="basebox left-menu center margin-soft">
-
-		<nav class="basebox testbox button"> B1 </nav>
-		<nav class="basebox testbox button"> B1 </nav>
-		<nav class="basebox testbox button"> B1 </nav>
-		<nav class="basebox testbox button"> B1 </nav>
-		<nav class="basebox testbox button"> B1 </nav>
-
+	<div class="basebox row app-footer">
+		<div class="app-footer-element">Footer</div>
+		<div class="app-footer-element">Terminal</div>
 	</div>
-
-	<div class="basebox testbox margin-soft">
-		APP
-
-	</div>
-
-</div-->
 
 </div>
 </body>
@@ -135,5 +118,4 @@
 
 </script>
 
-</body>
 </html>

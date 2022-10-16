@@ -2,78 +2,154 @@ body {
 }
 
 ::-webkit-scrollbar {
-	width: 0px !important;
+	width: 0px;
 	height: 0px;
+	display: none;
 }
 
 
-.container-fullscreen {
+.app-main {
 	display: flex;
 	height: 100vh;
 	flex-grow: 1; /*item*/
 	align-items: stretch;
-
-
-	background-color: red;
+	background-color: var(--default-background);
 }
 
-.vertical-scrollbar {
+.app-header {
+    display: flex;
+    height: 6vh;
+    background-color: var(--bg2);
+}
+
+.app-body {
 	display: flex;
 	flex-grow: 1;
-	/*
-	margin: 0px;
-	max-width: 60px;
-	*/
-
-	/*Ez kell hogy egymás alá soroljanak*/
-	flex-wrap: wrap;
-	/*align-content: flex-start;*/
-
-	/*Enable scroll*/
-	overflow: scroll;
-
-	/*TEST BASEBOX ELEMENTS*/
-
-	background-color: green;
+	width: 100vh;
+	height: 89vh;
+	background-color: var(--default-background);
 }
 
-.app-button {
-	width: 60px;
-	height: 40px;
-	margin: 10px;
+.app-scroll {
+    display: flex;
+    align-content: flex-start;
+    width: 10vh;
+    min-width: 50px;
+    height: 90vh;
+    background-color: var(--bg2);
 }
 
-.app-main {
-	display: flex;
-	flex-grow: 1;
-	margin: 10px;
-	background-color: #222;
+.app-files {
+    display: flex;
+    flex-grow: 0 !important;
+    width: 5vh;
+    height: 90vh;
+    min-width: 150px;
+    align-content: flex-start;
+    background-color: var(--fg2);
 }
 
-.app-footer {
-	display: flex;
-	flex-grow: 1;
-	height: 4vh;
-	margin: 0px;
-	background-color: #222;
+.app-entry {
+    display: flex;
+    min-height: 30px;
+    margin: 3px;
+    padding: 3px;
+    background-color: var(--default-item);
 }
 
+.app-workspace {
+    display: flex;
+    align-content: flex-start;
+    align-content: stretch;
+    flex-grow: 1;
+    background-color: var(--default-background);
+}
+
+.app-editor {
+    display: flex;
+    margin: 0;
+    padding: 3px;
+    width: 100%;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    border-radius: 0;
+    margin-bottom: 1vh;
+    color: var(--default-font);
+    background-color: var(--default-item);
+    border: 2px solid var(--default-item);
+}
 
 .t0 {
 	display: flex;
 	flex-grow: 1;
 	align-content: stretch;
 	flex-wrap: wrap;
-	background-color: blue;
+	background-color: var(--default-background);
 }
 
 .t1 {
 	display: flex;
 	flex-grow: 1;
-	background-color: #111;
 	height: 96vh;
 	max-width: 60px;
+
+	background-color: var(--bg2);
 }
+
+.app-button-gap {
+    row-gap: 3px;
+    column-gap: 30px;
+}
+
+.app-button {
+    display: flex;
+	width: 50px;
+	min-height: 50px;
+	margin: 3px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* full-center */
+	border-radius: var(--border-radius-soft);
+	background-color: var(--fg2);
+}
+
+
+
+.t4-element {
+	display: flex;
+	min-width: 70px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* full-center */
+	margin: var(--margin-soft);
+	border-radius: var(--border-radius-soft);
+}
+.t4-element:hover {
+    background-color: var(--default-hover);
+}
+
+
+.app-footer {
+	display: flex;
+	flex-grow: 1;
+	height: 5vh;
+	min-height: 30px;
+	margin: 0px;
+	background-color: var(--bg2);
+}
+
+.app-footer-element {
+    display: flex;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 7px;
+    background-color: var(--fg2);
+}
+
+
+
+
 
 .t2 {
 	display: flex;
@@ -87,7 +163,7 @@ body {
 	flex-grow: 1;
 	flex-basis: 100%;
 	height: 4vh;
-	background-color: #222;
+	background-color: var(--bg2);
 }
 
 .t4 {
@@ -95,43 +171,5 @@ body {
 	background-color: red;
 }
 
-.t4-element {
-	display: flex;
-	width: 70px;
-	height: 30px;
-	margin: 3px;
-	background-color: yellow;
-}
-
-.horizontal-scrollbar {
-
-}
-
-/* GRID TEMPLATE */
-
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
 
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu   main   main   main   main   main'
-    'footer footer footer footer footer footer';
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
-  align-items: stretch;
-  align-self: stretch;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
