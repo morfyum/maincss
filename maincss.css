@@ -25,11 +25,17 @@
     --default-background: rgba(255, 255, 255, 1);
     --default-font: rgba(0, 0, 0, 1);
     --default-item: rgba(230, 230, 230, 1);
+
+    --bg2: rgba(250, 250, 250);
+    --fg2: rgba(225, 225, 225);
 }
 :root.dark {
-    --default-background: rgba(46, 52, 54, 1);
+    --default-background: rgba(40, 40, 40, 1);
     --default-font: rgba(255, 255, 255, 1);
-    --default-item: rgba(30, 30, 30, 1);
+    --default-item: rgba(60, 60, 60, 1);
+
+    --bg2: rgba(30, 30, 30);
+    --fg2: rgba(50, 50, 50);
 }
 :root {
     /* COLOR DEFINITIONS */
@@ -37,22 +43,25 @@
     --default-red: rgba(255, 0, 0, 1);
     --default-green: rgba(40, 210, 0, 1);
 
+    --default-hover: rgba(85, 85, 85);
+
     /* STYLE DEFINITIONS*/
     --default-border-radius: var(--border-radius);
     --default-padding: var(--padding) ;
     --default-margin: var(--margin);
 
-    --border-radius-hard: 27px;
     --border-radius:13px;
     --border-radius-soft: 7px;
+    --border-radius-hard: 27px;
 
-    --padding-hard: 1rem;
     --padding: 0.5rem;
     --padding-soft: 3px;
+    --padding-hard: 1rem;
 
-    --margin-hard: 1rem;
     --margin: 0.5rem;
     --margin-soft: 3px;
+    --margin-hard: 1rem;
+
 }
 
 /***  GLOBAL VARIABLES END  ***/
@@ -236,7 +245,7 @@ body{
 }
 
 /* BUTTON */
-.button{
+.button {
     min-height: 15px;
 
     padding: 1rem;
@@ -271,7 +280,7 @@ footer{
   padding: 1rem;
   /*color: var(--font-color-for-dark);*/
   color: var(--default-font);
-  background-color: var(--default-background);
+  background-color: var(--bg2);
 }
 
 fieldset{ border: 1px solid;}
@@ -434,12 +443,14 @@ p {text-align: justify;}
 }
 ::-webkit-scrollbar-track {
     background-color: var(--default-background);
+    border-radius: 13px;
 }
 ::-webkit-scrollbar-thumb {
     background: var(--default-item);
     border-radius: 13px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: var(--default-hover);
 }
+
 
