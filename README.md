@@ -29,7 +29,7 @@ find ./ -name "*.css" -exec cat {} \; > productcss.css
 ✅ stable | 🚧 Not recommended to use | ✨ new | 🧪 changed/testing
 
 ```
-## TESTER
+## TEST TOOLS
     .testbox                : ✅ Orange highlighting
 
 ## FUNCTIONALITY
@@ -51,9 +51,9 @@ find ./ -name "*.css" -exec cat {} \; > productcss.css
     .col-6                  : 🧪 Six column
 
 ## COLORS
-    .bg1	                : ✨ Primary Background color
+    .bg1                    : ✨ Primary Background color
     .fg1                    : ✨ Primary Foreground color
-    .bg2	                : ✨ Secondary Background color
+    .bg2                    : ✨ Secondary Background color
     .fg2                    : ✨ Secondary Foreground color
 
 ## DESIGN
@@ -67,7 +67,7 @@ find ./ -name "*.css" -exec cat {} \; > productcss.css
     .padding-hard           : ✅ --padding-hard: 13px
 
     .margin                 : ✅ --margin: 0.5rem
-    .margin-soft	    : ✅ --margin-soft: 3px
+    .margin-soft            : ✅ --margin-soft: 3px
     .margin-hard            : ✅ --margin-hard: 1rem
 
     .border-radius          : ✨ --border-radius: 13px
@@ -82,19 +82,19 @@ find ./ -name "*.css" -exec cat {} \; > productcss.css
     .text-justify           : ✅ With align-item property
     .text-right             : ✅ With align-item property
 
-	.item-top           : ✅ With align-item property
-	.item-center	    : ✅ With align-item property
-	.item-bottom	    : ✅ With align-item property
+    .item-top               : ✅ With align-item property
+    .item-center	        : ✅ With align-item property
+    .item-bottom	        : ✅ With align-item property
 
 ## MODIFIED HTML ELEMENTS  
-    h1, h2, h3,             : ✨ `width: 100%`, `padding: var(--padding-hard)`
+    h1, h2, h3,             : ✨ width: 100%, padding: var(--padding-hard)
     h4, h5, h6		
-    p                       : ✅ `text-align: justify`
-    fieldset                : 🧬 `border: 1px solid`
+    p                       : ✅ text-align: justify
+    fieldset                : 🧬 border: 1px solid
     input                   : 🧪 Input field
-    img                     : 🧪 Add: `width: 100%`, `max-height: 100%`, `object-fit: cover`, `object-position: top center`
-	                         Background `-repeat: no-repeat`, `-position: top center`, `-size: cover`  
-    hr                      : ✅ `display: block`, `width: 90%`, `boder: 1px, solid, var(--default-orange)`, `height: 0px`  
+    img                     : 🧪 Add: width: 100%, max-height: 100%, object-fit: cover, object-position: top center
+	                         Background -repeat: no-repeat, -position: top center, -size: cover  
+    hr                      : ✅ display: block, width: 90%, boder: 1px, solid, var(--default-orange), height: 0px  
     footer                  : ✅ HTML footer element modifiees
     a:link                  : ✅ text-decoration: none, color: var(default-font)
     a:visited               : ✅ color: var(--default-font)
