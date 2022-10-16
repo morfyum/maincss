@@ -23,16 +23,16 @@
 :root,
 :root.light {
     --default-background: rgba(255, 255, 255, 1);
-    --default-font: rgba(0, 0, 0, 1);
     --default-item: rgba(230, 230, 230, 1);
+    --default-font: rgba(0, 0, 0, 1);
 
     --bg2: rgba(250, 250, 250);
     --fg2: rgba(225, 225, 225);
 }
 :root.dark {
     --default-background: rgba(40, 40, 40, 1);
-    --default-font: rgba(255, 255, 255, 1);
     --default-item: rgba(60, 60, 60, 1);
+    --default-font: rgba(255, 255, 255, 1);
 
     --bg2: rgba(30, 30, 30);
     --fg2: rgba(50, 50, 50);
