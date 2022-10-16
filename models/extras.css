@@ -186,7 +186,7 @@ CODE EXAMPLE:
 
 .alert {
   width: 100%;
-  margin: 0.25rem;
+  margin: var(--default-margin); /*0.25rem*/
   padding: 20px;
   border-radius: var(--default-border-radius);
   background-color: var(--default-item);
