@@ -83,8 +83,8 @@ find ./ -name "*.css" -exec cat {} \; > productcss.css
     .text-right             : ✅ With align-item property
 
     .item-top               : ✅ With align-item property
-    .item-center	        : ✅ With align-item property
-    .item-bottom	        : ✅ With align-item property
+    .item-center            : ✅ With align-item property
+    .item-bottom            : ✅ With align-item property
 
 ## MODIFIED HTML ELEMENTS  
     h1, h2, h3,             : ✨ width: 100%, padding: var(--padding-hard)
