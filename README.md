@@ -51,8 +51,10 @@ find ./ -name "*.css" -exec cat {} \; > productcss.css
     .col-6                  : 🧪 Six column
 
 ## COLORS
-    .bg1	            : ✨ Primary Background color
+    .bg1	                : ✨ Primary Background color
     .fg1                    : ✨ Primary Foreground color
+    .bg2	                : ✨ Secondary Background color
+    .fg2                    : ✨ Secondary Foreground color
 
 ## DESIGN
     .gap                    : ✨ Flexbox gap: `row-gap: 30px`, `column-gap: 30px`    
