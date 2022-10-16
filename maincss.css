@@ -147,6 +147,9 @@ body{
 .bg1 { background-color: var(--default-background); }
 .fg1 { background-color: var(--default-item); }
 
+.bg2 { background-color: var(--bg2); }
+.fg2 { background-color: var(--fg2); }
+
 .padding { padding: var(--padding) }
 .padding-soft { padding: var(--padding-soft) }
 .padding-hard { padding: var(--padding-hard) }
