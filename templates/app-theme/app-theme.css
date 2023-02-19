@@ -7,26 +7,42 @@ body {
 	display: none;
 }
 
+/* APP TEMPLATE
+    app-main: whole app 100vh
+        - app-header : Header Bar
+        - app-body : All content
+            - app-scroll
+                - veritcal-scroll
+                    - Elements
+            - app-files
+                - file-entries
+            - app-workspace
+                - input / text-editor
+        - app-footer : Footer
+            - footer elements
+
+*/
 
 .app-main {
 	display: flex;
 	height: 100vh;
+	/*padding: 0.5vh;*/
 	flex-grow: 1; /*item*/
 	align-items: stretch;
+	/*background-color: red;*/
 	background-color: var(--default-background);
 }
 
 .app-header {
-    display: flex;
-    height: 6vh;
-    background-color: var(--bg2);
+    /*Unused*/
+    height: 5vh;
 }
 
 .app-body {
 	display: flex;
-	flex-grow: 1;
+	flex-grow: 100;
 	width: 100vh;
-	height: 89vh;
+	height: 90vh;
 	background-color: var(--default-background);
 }
 
@@ -35,18 +51,19 @@ body {
     align-content: flex-start;
     width: 10vh;
     min-width: 50px;
-    height: 90vh;
-    background-color: var(--bg2);
+    height: 89vh;
+    overflow: hidden !important;
+    /*background-color: var(--bg2);*/
 }
 
 .app-files {
     display: flex;
     flex-grow: 0 !important;
     width: 5vh;
-    height: 90vh;
+    height: 89vh;
     min-width: 150px;
     align-content: flex-start;
-    background-color: var(--fg2);
+    background-color: var(--bg2);
 }
 
 .app-entry {
@@ -54,7 +71,8 @@ body {
     min-height: 30px;
     margin: 3px;
     padding: 3px;
-    background-color: var(--default-item);
+    white-space: nowrap;
+    /*background-color: var(--default-item);*/
 }
 
 .app-workspace {
@@ -73,8 +91,7 @@ body {
     outline: none;
     resize: none;
     font-size: 14px;
-    border-radius: 0;
-    margin-bottom: 1vh;
+    border-radius: 7px;
     color: var(--default-font);
     background-color: var(--default-item);
     border: 2px solid var(--default-item);
@@ -134,16 +151,17 @@ body {
 	display: flex;
 	flex-grow: 1;
 	height: 5vh;
-	min-height: 30px;
+	/*min-height: 30px;*/
 	margin: 0px;
-	background-color: var(--bg2);
+	/*background-color: var(--bg2);*/
 }
 
 .app-footer-element {
+    /* margin & padding miatt scrollozik*/
     display: flex;
-    margin: 3px;
-    padding: 3px;
-    border-radius: 7px;
+    /*font-size: 3vh;*/
+    border-radius: 13px;
+    /*padding: 3px;*/
     background-color: var(--fg2);
 }
 
