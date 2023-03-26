@@ -296,6 +296,7 @@ input{
   font-size: 1.25rem;
   */
   outline: none;
+  font-size: inherit;
   border-radius: 23px;
   color: var(--default-font);
   background-color: var(--default-item);
