@@ -91,7 +91,7 @@ find ./ -name "*.css" -exec cat {} \; > productcss.css
     h4, h5, h6		
     p                       : ✅ text-align: justify
     fieldset                : 🧬 border: 1px solid
-    input                   : 🧪 Input field
+    input                   : 🧪 Default <input> tag changed for better integration for design
     img                     : 🧪 Add: width: 100%, max-height: 100%, object-fit: cover, object-position: top center
 	                         Background -repeat: no-repeat, -position: top center, -size: cover  
     hr                      : ✅ display: block, width: 90%, boder: 1px, solid, var(--default-orange), height: 0px  
