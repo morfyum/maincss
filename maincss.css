@@ -289,15 +289,17 @@ footer{
 fieldset{ border: 1px solid;}
 
 input{
+  /*
   min-height: 20px;
   margin: 0.5rem;
   padding: 0.75rem;
   font-size: 1.25rem;
+  */
   outline: none;
   border-radius: 23px;
   color: var(--default-font);
   background-color: var(--default-item);
-  border: 2px solid var(--default-item);
+  border: var(--padding) solid var(--default-item);
   /*box-shadow: 0px 0px 7px var(--default-item);*/
 }
 
