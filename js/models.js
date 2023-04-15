@@ -1,6 +1,9 @@
 // FONTOS! Külön <script> tagek között hívd meg a fájt és ezt a scripte.
 // Ugyan abban nem fog működni...
 
+
+
+
 function test01() {
     alert("JS MODELS IS WORK :) ");
 }
