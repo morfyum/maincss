@@ -38,7 +38,7 @@
 				<nav class="header-flex-element">Facestyle</nav>
 			</a>
 
-			<div onclick="headerDropdown()" class="header-flex-element">
+			<div id="btn_headerDropdown" class="header-flex-element">
 				[ Templates ]
 				<div id="headerDropdown" class="header-flex-dropdown">
 					<div class="dropdown-background">
@@ -61,14 +61,14 @@
 
 			<div class="header-flex-right-content">
 
-				<div class="header-flex-element theme-button thb-light" onclick="setTheme('light')">
+				<div class="header-flex-element theme-button thb-light" id="btn_setThemeLight">
 						Light
 				</div>
-				<div class="header-flex-element theme-button thb-dark" onclick="setTheme('dark')">
+				<div class="header-flex-element theme-button thb-dark" id="btn_setThemeDark">
 						Dark
 				</div>
 
-				<div onclick="settingsBar()" class="header-flex-element">
+				<div id="btn_settingsBar" class="header-flex-element">
 					☰
 					<div id="settingsBar" class="header-flex-dropdown">
 						<div class="dropdown-background">
@@ -508,31 +508,52 @@
 
 
 <script>
-	/* Set Theme with buttons */
+    const btn_setThemeLight = document.querySelector('#btn_setThemeLight')
+    const btn_setThemeDark = document.querySelector('#btn_setThemeDark')
+
+	/* Handle theme setting */
 	function setTheme(theme) {
 		document.documentElement.className = theme
 		localStorage.setItem("theme", theme);
 		theme = localStorage.getItem("theme");
 	}
+    // Every button required own addEventListener array fn.
+    btn_setThemeLight.addEventListener('click', () => { setTheme("light") });
+    btn_setThemeDark.addEventListener('click', () => { setTheme("dark") });
+
 </script>
 
 <script>
 
 	// Unused jumpToId
-	function jumpToId(element_id) {
+    /*function jumpToId(element_id) {
 		const element = document.getElementById(element_id);
 		element.scrollIntoView();
-	}
+	}*/
 
  	/* When the user clicks on the button,
 	toggle between hiding and showing the dropdown content */
-	function headerDropdown() {
-		document.getElementById("headerDropdown").classList.toggle("show");
-	}
 
-	function settingsBar() {
+    // Replace function with add event listener.
+    /*function headerDropdown() {
+		document.getElementById("headerDropdown").classList.toggle("show");
+	}*/
+
+    // New addEventListener instead function
+    const btn_headerDropdown = document.querySelector('#btn_headerDropdown')
+    btn_headerDropdown.addEventListener('click', () => {
+        document.getElementById("headerDropdown").classList.toggle("show");
+    });
+
+    // Remove, and replace with addEventListener like above
+	/*function settingsBar() {
 		document.getElementById("settingsBar").classList.toggle("show");
-	}
+	}*/
+    // New addEventListener instead function
+    const btn_settingsBar = document.querySelector('#btn_settingsBar')
+    btn_settingsBar.addEventListener('click', () => {
+        document.getElementById("settingsBar").classList.toggle("show");
+    });
 
 	// Close the dropdown if the user clicks outside of it
 	window.onclick = function(event) {
