@@ -321,7 +321,7 @@ CODE EXAMPLE:
     flex-wrap: wrap;
 
     border-radius: 13px;
-    box-shadow: 0px 0px 7px var(--default-item);
+    /*box-shadow: 0px 0px 7px var(--default-item);*/
     background-color: var(--default-background);
 }
 
