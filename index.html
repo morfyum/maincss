@@ -38,7 +38,7 @@
 				<nav class="header-flex-element">Facestyle</nav>
 			</a>
 
-			<div id="btn_headerDropdown" class="header-flex-element">
+			<div id="btnHeaderDropdown" class="header-flex-element">
 				[ Templates ]
 				<div id="headerDropdown" class="header-flex-dropdown">
 					<div class="dropdown-background">
@@ -61,14 +61,14 @@
 
 			<div class="header-flex-right-content">
 
-				<div class="header-flex-element theme-button thb-light" id="btn_setThemeLight">
+				<div class="header-flex-element theme-button thb-light" id="btnSetThemeLight">
 						Light
 				</div>
-				<div class="header-flex-element theme-button thb-dark" id="btn_setThemeDark">
+				<div class="header-flex-element theme-button thb-dark" id="btnSetThemeDark">
 						Dark
 				</div>
 
-				<div id="btn_settingsBar" class="header-flex-element">
+				<div id="btnSettingsBar" class="header-flex-element">
 					☰
 					<div id="settingsBar" class="header-flex-dropdown">
 						<div class="dropdown-background">
@@ -163,14 +163,22 @@
 
 		<div class="basebox col-2 padding text-justify">
 			<img src="02.jpg" alt="lake with mountains example for post">
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting
+			    industry. Lorem Ipsum has been the industry's standard dummy
+			     text ever since the 1500s, when an unknown printer took a
+			    galley of type and scrambled it to make a type specimen book.</p>
 			<div class="source-code">
 			Source-Code format for Documentations and descriptions.<br>
 			----------- | -------------<br>
 			1 | 2 | 3 | - | D | E | F |<br>
 			A | B | C | - | 4 | 5 | 6 |
 			</div>
-			<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p>It has survived not only five centuries, but also the leap into
+			    electronic typesetting, remaining essentially unchanged. It was
+			    popularised in the 1960s with the release of Letraset sheets
+			    containing Lorem Ipsum passages, and more recently with desktop
+			    publishing software like Aldus PageMaker including versions of
+			    Lorem Ipsum.</p>
 		</div>
 
 		<div class="basebox col-5 padding">
@@ -508,8 +516,8 @@
 
 
 <script>
-    const btn_setThemeLight = document.querySelector('#btn_setThemeLight')
-    const btn_setThemeDark = document.querySelector('#btn_setThemeDark')
+    const btnSetThemeLight = document.querySelector('#btnSetThemeLight')
+    const btnSetThemeDark = document.querySelector('#btnSetThemeDark')
 
 	/* Handle theme setting */
 	function setTheme(theme) {
@@ -518,8 +526,8 @@
 		theme = localStorage.getItem("theme");
 	}
     // Every button required own addEventListener array fn.
-    btn_setThemeLight.addEventListener('click', () => { setTheme("light") });
-    btn_setThemeDark.addEventListener('click', () => { setTheme("dark") });
+    btnSetThemeLight.addEventListener('click', () => { setTheme("light") });
+    btnSetThemeDark.addEventListener('click', () => { setTheme("dark") });
 
 </script>
 
@@ -540,8 +548,8 @@
 	}*/
 
     // New addEventListener instead function
-    const btn_headerDropdown = document.querySelector('#btn_headerDropdown')
-    btn_headerDropdown.addEventListener('click', () => {
+    const btnHeaderDropdown = document.querySelector('#btnHeaderDropdown')
+    btnHeaderDropdown.addEventListener('click', () => {
         document.getElementById("headerDropdown").classList.toggle("show");
     });
 
@@ -550,13 +558,13 @@
 		document.getElementById("settingsBar").classList.toggle("show");
 	}*/
     // New addEventListener instead function
-    const btn_settingsBar = document.querySelector('#btn_settingsBar')
-    btn_settingsBar.addEventListener('click', () => {
+    const btnSettingsBar = document.querySelector('#btnSettingsBar')
+    btnSettingsBar.addEventListener('click', () => {
         document.getElementById("settingsBar").classList.toggle("show");
     });
 
 	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
+	/*window.onclick = function(event) {
 		if (!event.target.matches('.header-flex-element')) {
 		    var dropdowns = document.getElementsByClassName("header-flex-dropdown");
 		    var i;
@@ -567,5 +575,5 @@
 				}
 		    }
 		}
-	}
+	}*/
 </script>
