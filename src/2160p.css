@@ -1,0 +1,29 @@
+@media screen and (min-width: 2160px) {
+
+	body{
+	  font-size: 2rem;
+	}
+
+	.basebox{
+	  font-size: 2rem;
+	}
+
+	header{
+	  /*width: 2160px !important;
+	  text-align: center;
+	  margin: auto;*/
+	}
+
+	.adbox{
+	  font-size: 1.5rem;
+	}
+
+	#unique-slideshow{
+	  width: 2000px;
+	  height: 1000px;
+	}
+
+	footer{
+	  font-size: 2rem;
+	}
+}
